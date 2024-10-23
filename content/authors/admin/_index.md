@@ -89,8 +89,8 @@ work:
     company_name: University of Pisa
     company_url: ''
     company_logo: ''
-    date_start: 2024-05
-    date_end: 2024-06
+    date_start: 2024-05-01
+    date_end: 2024-06-30
     summary: |2-
       - Teaching assistant for the course "Social Network Analysis" offered by the Master in Big Data, University of Pisa.
   - position: Freelance Data Analyst
