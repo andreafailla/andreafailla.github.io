@@ -16,4 +16,7 @@ publishDate: '2024-10-23T20:23:15.004041Z'
 publication_types:
 - article-journal
 publication: '*arXiv preprint arXiv:2408.00818*'
+
+url_code: 'https://github.com/YSocialTwin'
+url: 'ysocialtwin.github.io'
 ---
