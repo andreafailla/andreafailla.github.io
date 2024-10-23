@@ -83,6 +83,45 @@ education:
     date_end: 2020-10-01
     summary: |
       Modules are related to foreign languages and translation (English, Spanish), social sciences (sociology, psychology, anthropology), and didactics.
+      
+work:
+  - position: Teaching Assistant
+    company_name: University of Pisa
+    company_url: ''
+    company_logo: ''
+    date_start: 2024-05
+    date_end: 2024-06
+    summary: |2-
+      - Teaching assistant for the course "Social Network Analysis" offered by the Master in Big Data, University of Pisa.
+  - position: Freelance Data Analyst
+    company_name: Fiverr.com
+    company_url: ''
+    company_logo: ''
+    date_start: 2021-01-01
+    date_end: 2022-10-31
+    summary: |2-
+      - Implementation of Data Mining pipelines for companies and individuals
+      - Analysis of tabular, text, and network data.
+      - Data visualization and storytelling.
+  - position: "Research Fellowship: Visualization and analysis of 'omic' data for the study of Rett syndrome"
+    company_name: University of Pisa
+    company_url: ''
+    company_logo: ''
+    date_start: 2022-09-01
+    date_end: 2022-10-31
+    summary: |
+      - Implemented a web Genome browser for visualization and analysis of 'omics' data for the study of Rett syndrome. 
+      - Automated pipelines for the analysis of genomic data.
+  - position: "Internship: Hypergraph Modeling of Social Interactions"
+    company_name: University of Pisa
+    company_url: ''
+    company_logo: ''
+    date_start: 2022-02-01
+    date_end: 2022-07-31
+    summary: |
+      - Data collection, preprocessing and analysis
+      - Defined novel measures to study high-order interactions
+
 languages:
   - name: Italian
     percent: 100
