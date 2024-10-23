@@ -1,5 +1,5 @@
 ---
-title: 'Attributed Stream-Hypernetwork Analysis: homophilic behaviors in pairwise and group political discussions on reddit
+title: 'Attributed Stream-Hypernetwork Analysis: homophilic behaviors in pairwise and group political discussions on reddit'
 authors:
 - Andrea Failla
 - Salvatore Citraro
