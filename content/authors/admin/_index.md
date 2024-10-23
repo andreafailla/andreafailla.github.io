@@ -104,6 +104,15 @@ work:
     summary: |
       - Implemented a web Genome browser for visualization and analysis of 'omics' data for the study of Rett syndrome. 
       - Automated pipelines for the analysis of genomic data.
+  - position: "Internship: Hypergraph Modeling of Social Interactions"
+    company_name: University of Pisa
+    company_url: ''
+    company_logo: ''
+    date_start: 2022-02-01
+    date_end: 2022-07-31
+    summary: |
+      - Data collection, preprocessing and analysis
+      - Defined novel measures to study high-order interactions
 
 languages:
   - name: Italian
@@ -120,18 +129,17 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: "Best Paper Award: Beyond Boundaries"
+  - title: "Best Paper Award"
     date: '2023-09-05'
-    awarder: ASONAM2024
-    icon: coursera
+    awarder: "ASONAM2024: International Conference on Advances in Social Networks Analysis and Mining"
+    
     summary: |
-      Blabla
-  - title: "Best Project Award IUS: Intelligent University System"
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
+      Our paper "Beyond Boundaries: Capturing Social Segregation on Hypernetworks" has been awarded as the best paper at ASONAM2024. 
+  - title: "Best Project Award"
+    date: '2023-06-10'
+    awarder: "Summer School on Artificial Intelligence and Society"
     summary: |
-      bla
+      Our project "IUS: Intelligent University System" has been awarded as the best project at the Summer School on Artificial Intelligence and Society.
 ---
 
 ## About Me
