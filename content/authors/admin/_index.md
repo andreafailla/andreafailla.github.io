@@ -158,13 +158,13 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Best Paper Award "Beyond Boundaries 
+  - title: "Best Paper Award: Beyond Boundaries"
     date: '2023-09-05'
     awarder: ASONAM2024
     icon: coursera
     summary: |
       Blabla
-  - title: Best Project Award: "IUS: Intelligent University System"
+  - title: "Best Project Award IUS: Intelligent University System"
     date: '2023-07-01'
     awarder: edX
     icon: edx
