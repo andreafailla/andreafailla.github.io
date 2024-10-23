@@ -39,6 +39,7 @@ sections:
     content:
       title: Languages
       username: admin
+--- 
 
 experience:
   - title: 'CEO'
