@@ -25,9 +25,9 @@ role: PhD Student
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: University of Pisa
-    url: https://openai.com/
+    url: https://www.unipi.it/
   - name: ISTI-CNR
-    url: https://openai.com/
+    url: https://www.isti.cnr.it/it/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -40,7 +40,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/andreafailla
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/andrea-failla-8990551a1/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=6tQd-PIAAAAJ&hl=it&oi=ao
   - icon: academicons/orcid
@@ -75,7 +75,7 @@ education:
       - Text Analytics (30/30 with honors)
     button:
       text: 'Read Thesis'
-      url: 'https://example.com'
+      url: 'https://etd.adm.unipi.it/theses/available/etd-07292022-114220/'
       
   - area: BSc in Linguistic Mediation
     institution: University for Foreigners of Siena
@@ -88,7 +88,7 @@ work:
   - position: Teaching Assistant
     company_name: University of Pisa
     company_url: ''
-    company_logo: ''
+    company_logo: "custom/unipi"
     date_start: 2024-05-01
     date_end: 2024-06-30
     summary: |2-
@@ -96,7 +96,7 @@ work:
   - position: Freelance Data Analyst
     company_name: Fiverr.com
     company_url: ''
-    company_logo: ''
+    company_logo: "custom/fiverr"
     date_start: 2021-01-01
     date_end: 2022-10-31
     summary: |2-
@@ -106,7 +106,7 @@ work:
   - position: "Research Fellowship: Visualization and analysis of 'omic' data for the study of Rett syndrome"
     company_name: University of Pisa
     company_url: ''
-    company_logo: ''
+    company_logo: "custom/unipi"
     date_start: 2022-09-01
     date_end: 2022-10-31
     summary: |
@@ -115,7 +115,7 @@ work:
   - position: "Internship: Hypergraph Modeling of Social Interactions"
     company_name: University of Pisa
     company_url: ''
-    company_logo: ''
+    company_logo: "custom/unipi"
     date_start: 2022-02-01
     date_end: 2022-07-31
     summary: |
