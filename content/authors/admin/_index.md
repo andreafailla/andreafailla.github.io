@@ -33,24 +33,22 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'andrea.failla@phd.unipi.it'
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/AndreaFailla4
-  - icon: brands/instagram
-    url: https://www.instagram.com/
   - icon: brands/github
     url: https://github.com/andreafailla
   - icon: brands/linkedin
     url: https://www.linkedin.com/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=6tQd-PIAAAAJ&hl=it&oi=ao
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/0009-0009-6162-0274
 
 interests:
   - Online Social Networks
-  - Temporal/Attributed/Higher-order Networks
+  - Temporal, Attributed, and Higher-order Network Models
   - Large Language Models
 
 education:
@@ -59,89 +57,53 @@ education:
     date_start: 2022-11-01
     date_end: 2025-10-31
     summary: |
-      idk
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: M.Sc. in Digital Humanities
+      Developing higher-order/temporal network methods for studying dangerous dynamics in online social networks.
+      I took part in reviewing, lecturing, summer schools, visiting, and thesis supervision activities.
+      Supervisors: Dr. Giulio Rossetti, Dr. Remy Cazabet
+    
+  - area: MSc in Digital Humanities
     institution: University of Pisa
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
-      GPA: 3.8/4.0
+      110/110 with honors.
+      Thesis title: "Towards Attributed Stream Hypernetwork Analysis: Structure, Fetures, and Dynamics of Complex Social Systems"
 
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
+      - Data Mining (30/30 with honors)
+      - Social Network Analysis (30/30 with honors)
+      - Text Analytics (30/30 with honors)
+    button:
+      text: 'Read Thesis'
+      url: 'https://example.com'
       
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - area: BSc in Linguistic Mediation
+    institution: University for Foreigners of Siena
+    date_start: 2017-09-01
+    date_end: 2020-10-01
+    summary: |
+      Modules are related to foreign languages and translation (English, Spanish), social sciences (sociology, psychology, anthropology), and didactics.
+
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Freelance Data Analyst
+    company_name: Fiverr.com
     company_url: ''
     company_logo: ''
     date_start: 2021-01-01
-    date_end: ''
+    date_end: 2022-10-31
     summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      - Implementation of Data Mining pipelines for companies and individuals
+      - Analysis of tabular, text, and network data.
+      - Data visualization and storytelling.
+  - position: "Research Fellowship: Visualization and analysis of 'omic' data for the study of Rett syndrome"
+    company_name: University of Pisa
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2022-09-01
+    date_end: 2022-10-31
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
+      - Implemented a web Genome browser for visualization and analysis of 'omics' data for the study of Rett syndrome. 
+      - Automated pipelines for the analysis of genomic data.
 
 languages:
   - name: Italian
@@ -175,7 +137,8 @@ awards:
 ## About Me
 
 Andrea Failla is a Ph.D student at the University of Pisa under the National PhD Program in Artificial Intelligence for Society.
-He is also a member of KDDLab...
+He is also a member of and a member of the Knowledge Discovery and Data Mining Laboratory (KDDLab), a joint effort between Unipi, ISTI-CNR and Scuola Normale Superiore.
 
-His research interests include...
+His research interests relate to network science methods and their applications for computational social science. 
+He is particularly interested in studying online social networks and user cognitive, emotional, and behavioral dynamics.
 
