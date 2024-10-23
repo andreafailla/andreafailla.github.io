@@ -13,4 +13,5 @@ publication: '*Applied Network Science*'
 
 
 url_pdf: 'https://link.springer.com/content/pdf/10.1007/s41109-023-00555-6.pdf'
+url_code: 'https://github.com/GiulioRossetti/ASH'
 ---

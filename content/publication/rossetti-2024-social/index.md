@@ -17,6 +17,6 @@ publication_types:
 - article-journal
 publication: '*arXiv preprint arXiv:2408.00818*'
 
-url_code: 'https://github.com/YSocialTwin'
-url: 'ysocialtwin.github.io'
+url_code: 'ysocialtwin.github.io'
+
 ---
