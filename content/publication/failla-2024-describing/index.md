@@ -11,5 +11,5 @@ publication_types:
 - article-journal
 publication: '*Machine Learning*'
 
-url_pdf: "static/uploads/papers/Group Evolution in Temporal Data.pdf"
+pdf: "uploads/papers/Group Evolution in Temporal Data.pdf"
 ---
