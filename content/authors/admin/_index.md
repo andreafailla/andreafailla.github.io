@@ -88,7 +88,7 @@ work:
   - position: Teaching Assistant
     company_name: University of Pisa
     company_url: ''
-    company_logo: "custom/unipi"
+    company_logo: custom/unipi
     date_start: 2024-05-01
     date_end: 2024-06-30
     summary: |2-
@@ -96,7 +96,7 @@ work:
   - position: Freelance Data Analyst
     company_name: Fiverr.com
     company_url: ''
-    company_logo: "custom/fiverr"
+    company_logo: custom/fiverr
     date_start: 2021-01-01
     date_end: 2022-10-31
     summary: |2-
@@ -106,7 +106,7 @@ work:
   - position: "Research Fellowship: Visualization and analysis of 'omic' data for the study of Rett syndrome"
     company_name: University of Pisa
     company_url: ''
-    company_logo: "custom/unipi"
+    company_logo: custom/unipi
     date_start: 2022-09-01
     date_end: 2022-10-31
     summary: |
@@ -115,7 +115,7 @@ work:
   - position: "Internship: Hypergraph Modeling of Social Interactions"
     company_name: University of Pisa
     company_url: ''
-    company_logo: "custom/unipi"
+    company_logo: custom/unipi
     date_start: 2022-02-01
     date_end: 2022-07-31
     summary: |
