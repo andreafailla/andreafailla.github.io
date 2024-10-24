@@ -48,7 +48,7 @@ profiles:
 
 interests:
   - Online Social Networks
-  - Temporal, Attributed, and Higher-order Network Models
+  - Higher-order, Temporal, and Attributed Networks
   - Large Language Models
 
 education:
@@ -152,9 +152,9 @@ awards:
 
 ## About Me
 
-Andrea Failla is a Ph.D student at the University of Pisa under the National PhD Program in Artificial Intelligence for Society.
-He is also a member of and a member of the Knowledge Discovery and Data Mining Laboratory (KDDLab), a joint effort between Unipi, ISTI-CNR and Scuola Normale Superiore.
+Hey there! I'm a Ph.D student at the University of Pisa under the National PhD Program in Artificial Intelligence for Society.
+I am also a member of the Knowledge Discovery and Data Mining Laboratory (KDDLab), a joint effort between Unipi, ISTI-CNR and Scuola Normale Superiore.
 
-His research interests relate to network science methods and their applications for computational social science. 
-He is particularly interested in studying online social networks and user cognitive, emotional, and behavioral dynamics.
+My research interests relate to network science methods and their applications for computational social science. 
+I am particularly interested in studying online social networks and user cognitive, emotional, and behavioral dynamics.
 
