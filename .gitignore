@@ -8,3 +8,9 @@ content/authors/.DS_Store
 content/authors/admin/.DS_Store
 .DS_Store
 content/authors/admin/.DS_Store
+/public
+/resources
+.DS_Store
+/.idea
+hugo_stats.json
+go.sum
