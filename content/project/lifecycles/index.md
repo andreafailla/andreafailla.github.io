@@ -1,7 +1,7 @@
 ---
 title: LifeCycles
 date: 2024-03-01
-external_link: https://github.com/andreafailla/LifeCycles
+external_link: https://lifecycles.readthedocs.io/en/latest/?badge=latest
 
 ---
 
