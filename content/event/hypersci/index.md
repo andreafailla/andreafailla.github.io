@@ -1,8 +1,8 @@
 ---
 title: "HyperSCI"
 
-event: 1st International Workshop on Theory and Applications of Hypernetwork Science"
-event_url: https://hypersci-workshop.github.io/
+event: 1st International Workshop on Theory and Applications of Hypernetwork Science
+event_url: "https://hypersci-workshop.github.io/"
 
 location:  International Conference on Advances in Social Networks Analysis and Mining (ASONAM)
 address:

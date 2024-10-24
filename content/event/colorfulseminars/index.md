@@ -2,7 +2,7 @@
 title: "Group Dynamics in Online Social Networks: communities and high-order interactions in time"
 
 event: Colorful Seminars Series by SoBigData
-event_url: http://www.sobigdata.eu/events/colorful-seminar-series-news-and-emotions-5deg-seminar
+event_url: "http://www.sobigdata.eu/events/colorful-seminar-series-news-and-emotions-5deg-seminar"
 
 location:  Sala Seminari Est 351
 address:
