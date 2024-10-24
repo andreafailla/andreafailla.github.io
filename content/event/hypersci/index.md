@@ -16,7 +16,7 @@ summary: 1st International Workshop on Theory and Applications of Hypernetwork S
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-09-4T12:00:00Z'
+date: '2024-09-04T12:00:00Z'
 #date_end: '2030-06-01T15:00:00Z'
 all_day: true
 
