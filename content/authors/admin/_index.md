@@ -152,8 +152,8 @@ awards:
 
 ## About Me
 
-Hey there! I'm a Ph.D student at the University of Pisa under the National PhD Program in Artificial Intelligence for Society.
-I am also a member of the Knowledge Discovery and Data Mining Laboratory (KDDLab), a joint effort between Unipi, ISTI-CNR and Scuola Normale Superiore.
+Hey there! I’m a Ph.D. student at the University of Pisa, part of the National PhD Program in Artificial Intelligence for Society. 
+I work with the Knowledge Discovery and Data Mining Laboratory (KDDLab), a collaboration between the University of Pisa, ISTI-CNR, and Scuola Normale Superiore.
 
 My research centers around network science applications for computational social science, particularly in the context of online social networks. 
 I’m interested in understanding how users think, feel, and behave in digital environments, focusing on the dynamics that shape cognitive, emotional, and behavioral patterns.
