@@ -1,10 +1,12 @@
 ---
-title: Recent & Upcoming Events
-cms_exclude: true
+title: Events & Talks
+cms_exclude: false
 #url: talk
 
 # View
-view: card
+view: article-grid
+spacing: '5rem'
+columns: 3
 
 # Optional cover image (relative to `assets/media/` folder).
 image:

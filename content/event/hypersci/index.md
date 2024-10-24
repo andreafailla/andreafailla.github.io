@@ -40,14 +40,12 @@ links:
     icon_pack: hero
     name: Introduction
     url: uploads/slides/hypersci-intro.pdf
-  - icon: presentation-chart-line
-    icon_pack: hero
+  - icon: hero/presentation-chart-line
     name: Tutorial
     url: uploads/slides/hypersci-lib.pdf
-  - icon: chart-bar-square
-    icon_pack: hero
-    name: Flyer
-    url: uploads/posters/hypersci.jpeg
+
+url_poster: uploads/posters/hypersci.jpeg
+
 url_slides: ''
 #url_video: 'https://youtube.com'
 
