@@ -7,7 +7,7 @@ math: false
 tags:
   - OSNAM
 image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+  caption: 
 ---
 
 This is the page for the Online Social Network Analysis and Mining (OSNAM) module of the Machine Learning course at UCBL, Lyon, France.
