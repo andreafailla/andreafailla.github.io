@@ -28,6 +28,8 @@ Then, we will move to performance evaluation and discuss some key challenges in 
 
 Slides: [here](../../../uploads/slides/OSNAM-1.pdf) (adapted from Prof. [Giulio Rossetti](https://giuliorossetti.github.io/)'s material)
 
+Notebook [here](../../../uploads/networkx.ipynb)
+
 Practicals: [here](../../../uploads/TP_OSNAM1_LinkPred.pdf)
 
 Suggested Readings (freely available):
