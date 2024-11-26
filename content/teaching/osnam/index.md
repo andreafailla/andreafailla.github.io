@@ -28,11 +28,26 @@ Then, we will move to performance evaluation and discuss some key challenges in 
 
 Slides: [here](../../../uploads/slides/OSNAM-1.pdf) (adapted from Prof. [Giulio Rossetti](https://giuliorossetti.github.io/)'s material)
 
-Notebook [here](../../../uploads/networkx.ipynb)
+Introductory Networkx Notebook: [here](../../../uploads/networkx.ipynb)
 
 Practicals: [here](../../../uploads/TP_OSNAM1_LinkPred.pdf)
+(some) Practicals solutions: [here](../../../uploads/linkpred.ipynb)
 
 Suggested Readings (freely available):
 - Liben‐Nowell, David, and Jon Kleinberg. "The link‐prediction problem for social networks." Journal of the American society for information science and technology 58.7 (2007): 1019-1031.
 - Coscia, Michele, "The Atlas of the Aspiring Network Scientist" (2019), ch. 20 and 22.
 
+
+### Lecture 2: Community Detection
+
+Synopsis: This lecture introduces community detection in networks, focusing on identifying meso-scale structures using various algorithms. It discusses the challenges of defining and evaluating communities due to the ill-posed nature of the problem, highlighting approaches like modularity-based methods, bridge detection, and feature-based clustering. The lecture emphasizes the importance of community discovery for understanding functional modules in complex systems and concludes with tools and benchmarks for evaluation, referencing key readings and a Python library for practical application.
+
+
+Slides: [here](../../../uploads/slides/OSNAM-2.pdf) (adapted from Prof. [Giulio Rossetti](https://giuliorossetti.github.io/)'s material)
+
+Practicals: [here](../../../uploads/TP_OSNAM2_CD.pdf)
+
+
+Suggested Readings (freely available):
+- Fortunato, Santo. "Community detection in graphs." Physics reports 486.3-5 (2010): 75-174.
+- Coscia, Michele, "The Atlas of the Aspiring Network Scientist" (2019), ch. 31, 32, 33, and 34.

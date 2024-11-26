@@ -43,10 +43,13 @@ links:
   - icon: hero/presentation-chart-line
     name: Tutorial
     url: uploads/slides/hypersci-lib.pdf
+  - icon: hero/presentation-chart-line
+    icon_pack: hero
+    name: Website
+    url: "https://hypersci-workshop.github.io/"
 
 url_poster: uploads/posters/hypersci.jpeg
 
-url_slides: ''
 #url_video: 'https://youtube.com'
 
 # Markdown Slides (optional).
