@@ -13,11 +13,11 @@ image:
 This is the page for the Online Social Network Analysis and Mining (OSNAM) module of the Machine Learning course at UCBL, Lyon, France.
 
 ### Course Description
-This module will cover the following topics:
+This module will cover the following Network Science topics, with a specific focus on applications related to social media.
 - Link Prediction
 - Community Detection
-- Mining Text Data in Online Social Networks
-- Homophily, Polarization, and Echo Chamber detection
+- Dynamics of Networks
+- Dynamics on Networks
 
 
 ### Lecture 1: Link Prediction
@@ -28,10 +28,10 @@ Then, we will move to performance evaluation and discuss some key challenges in 
 
 Slides: [here](../../../uploads/slides/OSNAM-1.pdf) (adapted from Prof. [Giulio Rossetti](https://giuliorossetti.github.io/)'s material)
 
-Introductory Networkx Notebook: [here](../../../uploads/networkx.ipynb)
+Introductory Networkx Notebook: [here](../../../uploads/notebooks/networkx.ipynb)
 
 Practicals: [here](../../../uploads/TP_OSNAM1_LinkPred.pdf)
-(some) Practicals solutions: [here](../../../uploads/linkpred.ipynb)
+(some) Practicals solutions: [here](../../../uploads/notebooks/linkpred.ipynb)
 
 Suggested Readings (freely available):
 - Liben‐Nowell, David, and Jon Kleinberg. "The link‐prediction problem for social networks." Journal of the American society for information science and technology 58.7 (2007): 1019-1031.
@@ -47,7 +47,44 @@ Slides: [here](../../../uploads/slides/OSNAM-2.pdf) (adapted from Prof. [Giulio 
 
 Practicals: [here](../../../uploads/TP_OSNAM2_CD.pdf)
 
+Practicals solutions: [here](../../../uploads/notebooks/osnam_cd.ipynb)
+
 
 Suggested Readings (freely available):
 - Fortunato, Santo. "Community detection in graphs." Physics reports 486.3-5 (2010): 75-174.
 - Coscia, Michele, "The Atlas of the Aspiring Network Scientist" (2019), ch. 31, 32, 33, and 34.
+
+
+### Lecture 3: Dynamics of Networks
+
+Synopsis: In this lecture, we will see why it's important to take into account the temporal dimension when working with network data. We will discuss the difference between relations and interactions, and see how we can model dynamic topologies. Finally, we will build on top of the previous lecture to study communities as they evolve through time.
+
+
+Slides: [here](../../../uploads/slides/OSNAM-3.pdf) 
+
+Practicals: [here](../../../uploads/TP_OSNAM3_DCD.pdf)
+
+
+Suggested Readings (freely available):
+- Holme, Petter, and Jari Saramäki. "Temporal networks." Physics reports 519.3 (2012): 97-125.
+- Rossetti, Giulio, and Rémy Cazabet. "Community discovery in dynamic networks: a survey." ACM computing surveys (CSUR) 51.2 (2018): 1-37.
+
+### Lecture 4: Dynamics on Networks
+
+Synopsis: In this lecture we will go over some ways of studying moving "objects" in a network, e.g., diseases, opinions, innovations, etc.
+
+
+Slides: [here](../../../uploads/slides/OSNAM-4.pdf) 
+
+Practicals: [here](../../../uploads/notebooks/osnam_dm_practical.ipynb)
+
+If you want to play and generate GIFs of diffusion processes on networks,you can use this tool I made [here](https://diff2gif.streamlit.app/#diff2gif).
+
+Suggested Readings (freely available):
+- Coscia, Michele, "The Atlas of the Aspiring Network Scientist" (2019), ch. 17
+- Sîrbu, Alina, et al. "Algorithmic bias amplifies opinion fragmentation and polarization: A bounded confidence model." PloS one 14.3 (2019): e0213246.
+
+
+#### Feedback
+I am looking for ways to improve my teaching skills, and I welcome any feedback from the students. 
+I'd really appreciate if you could answer two short questions anonymously [here](https://forms.gle/eyywUUHtaKvm1beS9) (should take less than 5 minutes).
