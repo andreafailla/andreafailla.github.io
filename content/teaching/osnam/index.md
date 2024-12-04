@@ -67,7 +67,7 @@ Practicals: [here](../../../uploads/TP_OSNAM3_DCD.pdf)
 
 Suggested Readings (freely available):
 - Holme, Petter, and Jari Saramäki. "Temporal networks." Physics reports 519.3 (2012): 97-125.
-- Rossetti, Giulio, and Rémy Cazabet. "Community discovery in dynamic networks: a survey." ACM computing surveys (CSUR) 51.2 (2018): 1-37.
+- Cazabet, Remy, and Giulio Rossetti. "Challenges in community discovery on temporal networks." Temporal network theory. Cham: Springer International Publishing, 2023. 185-202.
 
 ### Lecture 4: Dynamics on Networks
 
