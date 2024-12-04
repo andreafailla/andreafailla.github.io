@@ -82,7 +82,7 @@ If you want to play and generate GIFs of diffusion processes on networks,you can
 
 Suggested Readings (freely available):
 - Coscia, Michele, "The Atlas of the Aspiring Network Scientist" (2019), ch. 17
-- Sîrbu, Alina, et al. "Algorithmic bias amplifies opinion fragmentation and polarization: A bounded confidence model." PloS one 14.3 (2019): e0213246.
+- Sîrbu, Alina, et al. "Opinion dynamics: models, extensions and external effects." Participatory sensing, opinions and collective awareness (2017): 363-401.
 
 
 #### Feedback
