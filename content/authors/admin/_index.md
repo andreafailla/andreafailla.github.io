@@ -137,6 +137,18 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
+  - title: "Best Oral Presentation Award"
+    date: '2024-12-12'
+    awarder: "13th International Conference on Complex Networks and their Applications"
+    
+    summary: |
+      Awarded for presenting our paper "YSocial: an LLM-powered Social Media Digital Twin"
+  - title: "Best Poster Award"
+    date: '2024-12-12'
+    awarder: "13th International Conference on Complex Networks and their Applications"
+    
+    summary: |
+      The poster for our publication "Bots of a feather: Mixing Biases in LLM's Opinion Dynamics" was awarded the best poster award at CNA2024.
   - title: "Best Paper Award"
     date: '2023-09-05'
     awarder: "ASONAM2024: International Conference on Advances in Social Networks Analysis and Mining"
