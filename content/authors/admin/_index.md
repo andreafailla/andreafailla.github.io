@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Student
+role: PhD Candidate in Artificial Intelligence
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -35,6 +35,8 @@ profiles:
   - icon: at-symbol
     url: 'andrea.failla@phd.unipi.it'
     label: E-mail Me
+  - icon: brands/bluesky
+    url: https://bsky.app/profile/andreajpg.bsky.social
   - icon: brands/x
     url: https://twitter.com/AndreaFailla4
   - icon: brands/github
@@ -45,6 +47,8 @@ profiles:
     url: https://scholar.google.com/citations?user=6tQd-PIAAAAJ&hl=it&oi=ao
   - icon: academicons/orcid
     url: https://orcid.org/0009-0009-6162-0274
+  
+
 
 interests:
   - Online Social Networks
@@ -168,7 +172,7 @@ Hey there! I’m a Ph.D. student at the University of Pisa, under the National P
 I am also a research associate at the National Research Council of Italy, within the Knowledge Discovery and Data Mining Laboratory (KDDLab), a collaboration between the University of Pisa, ISTI-CNR, and Scuola Normale Superiore.
 
 My research centers around network science applications for computational social science, particularly in the context of online social networks. 
-I’m interested in understanding how users think, feel, and behave in digital environments, focusing on the dynamics that shape cognitive, emotional, and behavioral patterns. Much of my work involves higher-order network models to capture complex group interactions, as well as temporal networks to study how these relationships evolve over time. More recently, I’ve been exploring the opportunities and challenges of using large language models in social science research.
+I’m interested in understanding how users think, feel, and behave in digital environments, focusing on the dynamics that shape cognitive, emotional, and behavioral patterns. Much of my work involves higher-order network models to capture complex group interactions, as well as temporal networks to study how these groups evolve over time. More recently, I’ve been exploring the opportunities and challenges of using Large Language Models in social science research.
 
 Outside of academia, I love digging into the soundscape of the (mostly Italian) underground music scene. What this means is, I know many bands with quirky names. Have you heard of Katana Koala Kiwi? You can find some obscure playlists [here](https://open.spotify.com/user/11157881664?si=8WpSXMoNS7-zysZQzOIjHA).
 
