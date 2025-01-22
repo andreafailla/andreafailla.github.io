@@ -1,27 +1,27 @@
 ---
-title: "LSAI"
+title: "TENET"
 
-event: 1st Doctoral Workshop on Law, Society and Artificial Intelligence
+event: TEmporal NETworks Satellite at NetSci 2025
 #event_url: https://lsai-ws.github.io/
 
-location:  Congress Center "Le Benedettine"
+location:  MECC
 address:
-  street:  University of Pisa
-  city: Pisa
-  region: (PI)
-  country: Italy
+  street: 
+  city: Maastricht
+  region: The Netherlands
+  country: 
 
-summary: 1st Doctoral Workshop on Law, Society and Artificial Intelligence
+summary: TEmporal NETworks Satellite at NetSci 2025
 
 links:
   - icon: hero/presentation-chart-line
     icon_pack: hero
     name: Website
-    url: "https://lsai-ws.github.io/"
+    url: "https://sites.google.com/view/tenet-netsci/home"
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-12-02T9:00:00Z'
+date: '2025-06-02T9:00:00Z'
 #date_end: '2030-06-01T15:00:00Z'
 all_day: true
 
@@ -41,9 +41,8 @@ image:
   #focal_point: Right
 
 
-url_poster: "https://lsai-ws.github.io/locandina.pdf"
+url_poster: ''
 url_slides: ''
-
 #url_video: 'https://youtube.com'
 
 # Markdown Slides (optional).

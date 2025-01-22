@@ -1,5 +1,5 @@
 ---
-title: "Group Dynamics in Online Social Networks: communities and high-order interactions in time"
+title: "Invited Talk @ Colorful Seminars"
 
 event: Colorful Seminars Series by SoBigData
 event_url: "http://www.sobigdata.eu/events/colorful-seminar-series-news-and-emotions-5deg-seminar"
