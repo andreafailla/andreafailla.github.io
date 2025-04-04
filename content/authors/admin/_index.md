@@ -94,7 +94,7 @@ work:
     company_url: ''
     company_logo: custom/unipi
     date_start: 2024-05-01
-    date_end: 2024-06-30
+    date_end: 2025-07-30
     summary: |2-
       - Teaching assistant for the course "Social Network Analysis" offered by the Master in Big Data, University of Pisa.
   - position: Freelance Data Analyst
@@ -133,6 +133,8 @@ languages:
     percent: 75
   - name: English
     percent: 75
+  - name: Portuguese
+    percent: 25
   - name: Spanish
     percent: 25
 
