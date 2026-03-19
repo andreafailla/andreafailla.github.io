@@ -440,7 +440,7 @@ function init() {
   ui.nPixelsRange.addEventListener("input", syncDuration);
 
   ui.sampleSelect.value = SAMPLE_IMAGES[0].file;
-  applyPreset(PRESETS.None);
+  applyPreset(PRESETS["Distorted Bass"]);
   loadSample(SAMPLE_IMAGES[0].file);
   refreshRangeDisplays();
   syncDuration();

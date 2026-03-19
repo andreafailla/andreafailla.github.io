@@ -29,8 +29,12 @@
         <span>Beats</span>
       </h1>
       <p class="subtitle">
-        Turn images into music. All processing happens locally in your browser - no
-        servers, no uploads.
+        Pix2Beats samples pixel colors, maps hues to notes in a chosen scale, and
+        builds a stereo waveform that is shaped with pedalboard-style effects - all
+        locally in your browser.
+        <br />
+        This is a browser-based demo that approximates the functionality of the original Pix2Beats project I built with Streamlit.
+        Originally, Pix2Beats was a Python application hosted on Streamlit Cloud, and it used the Spotify's Pedalboard library for audio processing. This web version is a reimagining of the concept, built with JavaScript and Web Audio API, and it runs entirely in the browser without any server-side processing. The effects are approximations of the original pedalboard chain, adapted for in-browser playback.
       </p>
     </header>
 
@@ -126,7 +130,7 @@
         </div>
 
         <div class="section">
-          <div class="section-title">Pedalboard (Browser Approx)</div>
+          <div class="section-title">Pedalboard</div>
           <div class="row slider">
             <label for="gainDbRange">Gain <span id="gainDbValue">0</span> dB</label>
             <input
@@ -301,12 +305,11 @@
 
     <footer>
       <div>
-        Built by Andrea Failla - Inspired by Victor Murcia and the Streamlit
-        30-day course
+        Built by Andrea Failla - Inspired by Victor Murcia 
       </div>
       <div class="links">
         <a href="https://github.com/andreafailla/pix2beats" rel="noreferrer">
-          Source on GitHub
+          Source on GitHub (original Streamlit version)
         </a>
         <a href="https://linktr.ee/andreafailla" rel="noreferrer">Linktree</a>
       </div>
