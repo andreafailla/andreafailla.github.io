@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pix2Beats - Images to Music</title>
+    <meta
+      name="description"
+      content="Pix2Beats turns images into music directly in your browser."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <header class="hero">
+      <p class="eyebrow">Pixel Sonification Lab</p>
+      <h1>
+        <span>Pix</span>
+        <span class="accent">2</span>
+        <span>Beats</span>
+      </h1>
+      <p class="subtitle">
+        Turn images into music. All processing happens locally in your browser - no
+        servers, no uploads.
+      </p>
+    </header>
+
+    <main class="layout">
+      <section class="card controls">
+        <div class="section">
+          <div class="section-title">Image</div>
+          <div class="row">
+            <label for="sampleSelect">Sample image</label>
+            <select id="sampleSelect"></select>
+          </div>
+          <div class="row">
+            <label for="uploadInput">Upload image</label>
+            <input id="uploadInput" type="file" accept="image/*" />
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Presets</div>
+          <div class="row">
+            <label for="presetSelect">Choose preset</label>
+            <select id="presetSelect"></select>
+          </div>
+          <div class="row inline-actions">
+            <button id="presetExportBtn" class="button secondary" type="button">
+              Export preset
+            </button>
+            <label class="button secondary file-button">
+              Import preset
+              <input id="presetImportInput" type="file" accept="application/json" />
+            </label>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Music Mapping</div>
+          <div class="row two">
+            <div>
+              <label for="scaleSelect">Scale</label>
+              <select id="scaleSelect"></select>
+            </div>
+            <div>
+              <label for="keySelect">Key</label>
+              <select id="keySelect"></select>
+            </div>
+          </div>
+          <div class="row two">
+            <div>
+              <label for="octaveSelect">Octave</label>
+              <select id="octaveSelect">
+                <option value="1">Low</option>
+                <option value="2">Mid</option>
+                <option value="3">High</option>
+              </select>
+            </div>
+            <div>
+              <label for="harmonySelect">Harmony</label>
+              <select id="harmonySelect"></select>
+            </div>
+          </div>
+          <div class="row slider">
+            <label for="tValueRange">Note duration <span id="tValue">0.20</span>s</label>
+            <input
+              id="tValueRange"
+              type="range"
+              min="0.1"
+              max="1"
+              step="0.01"
+              value="0.2"
+            />
+          </div>
+          <div class="row slider">
+            <label for="nPixelsRange">Pixels to sample <span id="nPixelsValue">64</span></label>
+            <input
+              id="nPixelsRange"
+              type="range"
+              min="64"
+              max="320"
+              step="1"
+              value="64"
+            />
+          </div>
+          <div class="row checks">
+            <label>
+              <input id="randomizeOctaves" type="checkbox" />
+              Randomize octaves
+            </label>
+            <label>
+              <input id="resizeToPixels" type="checkbox" />
+              Resize image to N pixels
+            </label>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Pedalboard (Browser Approx)</div>
+          <div class="row slider">
+            <label for="gainDbRange">Gain <span id="gainDbValue">0</span> dB</label>
+            <input
+              id="gainDbRange"
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+          </div>
+          <div class="row slider">
+            <label for="driveDbRange">Distortion <span id="driveDbValue">0</span> dB</label>
+            <input
+              id="driveDbRange"
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+          </div>
+          <div class="row slider">
+            <label for="cutoffHzRange">High-pass cutoff <span id="cutoffHzValue">0</span> Hz</label>
+            <input
+              id="cutoffHzRange"
+              type="range"
+              min="0"
+              max="1000"
+              step="1"
+              value="0"
+            />
+          </div>
+          <div class="row slider">
+            <label for="resonanceRange">Resonance <span id="resonanceValue">0.0</span></label>
+            <input
+              id="resonanceRange"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0"
+            />
+          </div>
+          <div class="row slider">
+            <label for="driveLadRange">Filter drive <span id="driveLadValue">1.0</span></label>
+            <input
+              id="driveLadRange"
+              type="range"
+              min="1"
+              max="100"
+              step="0.1"
+              value="1"
+            />
+          </div>
+          <div class="row slider">
+            <label for="delaySecondsRange">Delay <span id="delaySecondsValue">0.0</span>s</label>
+            <input
+              id="delaySecondsRange"
+              type="range"
+              min="0"
+              max="2"
+              step="0.1"
+              value="0"
+            />
+          </div>
+          <div class="row slider">
+            <label for="roomSizeRange">Reverb room <span id="roomSizeValue">0.0</span></label>
+            <input
+              id="roomSizeRange"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0"
+            />
+          </div>
+          <div class="row slider">
+            <label for="dampingRange">Reverb damping <span id="dampingValue">0.0</span></label>
+            <input
+              id="dampingRange"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0"
+            />
+          </div>
+          <div class="row slider">
+            <label for="wetLevelRange">Reverb wet <span id="wetLevelValue">0.0</span></label>
+            <input
+              id="wetLevelRange"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0"
+            />
+          </div>
+          <div class="row slider">
+            <label for="dryLevelRange">Reverb dry <span id="dryLevelValue">0.1</span></label>
+            <input
+              id="dryLevelRange"
+              type="range"
+              min="0.1"
+              max="1"
+              step="0.1"
+              value="0.1"
+            />
+          </div>
+          <div class="row slider">
+            <label for="widthRange">Stereo width <span id="widthValue">0.0</span></label>
+            <input
+              id="widthRange"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0"
+            />
+          </div>
+          <div class="row slider">
+            <label for="rateHzRange">Chorus rate <span id="rateHzValue">0.0</span> Hz</label>
+            <input
+              id="rateHzRange"
+              type="range"
+              min="0"
+              max="5"
+              step="0.1"
+              value="0"
+            />
+          </div>
+        </div>
+
+        <div class="section actions">
+          <button id="generateBtn" class="button primary" type="button">
+            Generate track
+          </button>
+          <a id="downloadBtn" class="button ghost" download>Download WAV</a>
+          <p class="note">
+            Effects are approximations of the original pedalboard chain for
+            in-browser playback.
+          </p>
+        </div>
+
+        <div id="status" class="status">Ready.</div>
+      </section>
+
+      <section class="card preview">
+        <div class="section-title">Preview</div>
+        <canvas id="imageCanvas" width="520" height="360"></canvas>
+        <div class="audio-block">
+          <div class="section-title">Playback</div>
+          <audio id="player" controls></audio>
+        </div>
+        <div class="summary">
+          <div>
+            <span class="label">Duration</span>
+            <span id="durationValue">0.0s</span>
+          </div>
+          <div>
+            <span class="label">Sample rate</span>
+            <span>22050 Hz</span>
+          </div>
+          <div>
+            <span class="label">Output</span>
+            <span>Stereo WAV</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        Built by Andrea Failla - Inspired by Victor Murcia and the Streamlit
+        30-day course
+      </div>
+      <div class="links">
+        <a href="https://github.com/andreafailla/pix2beats" rel="noreferrer">
+          Source on GitHub
+        </a>
+        <a href="https://linktr.ee/andreafailla" rel="noreferrer">Linktree</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
