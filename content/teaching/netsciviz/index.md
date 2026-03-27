@@ -21,9 +21,11 @@ This class will last 4 hours and will introduce the audience to the following to
 
 Slides: [here](https://docs.google.com/presentation/d/1gPkiAmuA6-4UKGjPZnWeOUJoVl9bzle-_N9oibcOKRw/edit?usp=sharing) (adapted from Prof. [Giulio Rossetti](https://giuliorossetti.github.io/)'s material)
 
-Notebook: [here](../../../static/uploads/notebooks/yadesa-SNA.ipynb)
+Notebook: [here](../../../uploads/notebooks/yadesa-SNA.ipynb)
 
-Data: ...
+Network data:
+- [Network Repository](https://networkrepository.com/)
+- [Stanford Large Network Dataset Collection](https://snap.stanford.edu/data/)
 
 Book with network theory/practice explained in simple terms and easy tone: [Atlas for the Aspiring Network Scientist](https://www.networkatlas.eu/)
 
