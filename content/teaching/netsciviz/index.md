@@ -21,7 +21,7 @@ This class will last 4 hours and will introduce the audience to the following to
 
 Slides: [here](https://docs.google.com/presentation/d/1gPkiAmuA6-4UKGjPZnWeOUJoVl9bzle-_N9oibcOKRw/edit?usp=sharing) (adapted from Prof. [Giulio Rossetti](https://giuliorossetti.github.io/)'s material)
 
-Notebook: [here](../../../uploads/notebooks/yadesa-SNA.ipynb)
+Notebook: [here](https://colab.research.google.com/drive/1utiJGGPOPsgXNUrRjZUQwtAAMk7_bXk3?usp=sharing). Please do "File -> Make a Copy on Drive" otherwise, if you edit the notebook, your results won't be saved!
 
 Network data:
 - [Network Repository](https://networkrepository.com/)
