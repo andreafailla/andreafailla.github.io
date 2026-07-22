@@ -20,12 +20,10 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Candidate in Artificial Intelligence, Research Fellow
+role: Postdoctoral Research Fellow
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: University of Pisa
-    url: https://www.unipi.it/
   - name: ISTI-CNR
     url: https://www.isti.cnr.it/it/
 
@@ -33,7 +31,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'andrea.failla@phd.unipi.it'
+    url: 'andrea.failla@isti.cnr.it'
     label: E-mail Me
   - icon: brands/bluesky
     url: https://bsky.app/profile/andreajpg.bsky.social
@@ -94,7 +92,7 @@ work:
     company_url: ''
     company_logo: custom/unipi
     date_start: 2024-05-01
-    date_end: 2025-07-30
+    date_end: 2026-07-30
     summary: |2-
       - Teaching assistant for the course "Social Network Analysis" offered by the Master in Big Data, University of Pisa.
   - position: Freelance Data Analyst
@@ -170,8 +168,7 @@ awards:
 
 ## About Me
 
-Hey there! I’m a Ph.D. student at the University of Pisa, under the National PhD Program in Artificial Intelligence for Society. 
-I am also a research fellow at the National Research Council of Italy, within the Knowledge Discovery and Data Mining Laboratory (KDDLab), a collaboration between the University of Pisa, ISTI-CNR, and Scuola Normale Superiore.
+Hey there! I am a postdoctoral research fellow at the National Research Council of Italy, within the Knowledge Discovery and Data Mining Laboratory (KDDLab), a collaboration between the University of Pisa, ISTI-CNR, and Scuola Normale Superiore. I hold a Ph.D. in Artificial Intelligence and Society under the Italian National Ph.D. Program in AI, University of Pisa.
 
 My research centers around network science applications for computational social science, particularly in the context of online social networks. 
 I’m interested in understanding how users think, feel, and behave in digital environments, focusing on the dynamics that shape cognitive, emotional, and behavioral patterns. Much of my work involves higher-order network models to capture complex group interactions, as well as temporal networks to study how these groups evolve over time. More recently, I’ve been exploring the opportunities and challenges of using Large Language Models in social science research.
