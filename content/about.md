@@ -1,0 +1,6 @@
+Hey there! I am a postdoctoral research fellow at the National Research Council of Italy, within the Knowledge Discovery and Data Mining Laboratory (KDDLab), a collaboration between the University of Pisa, ISTI-CNR, and Scuola Normale Superiore. I hold a Ph.D. in Artificial Intelligence and Society under the Italian National Ph.D. Program in AI, University of Pisa.
+
+My research centers around network science applications for computational social science, particularly in the context of online social networks. 
+I’m interested in understanding how users think, feel, and behave in digital environments, focusing on the dynamics that shape cognitive, emotional, and behavioral patterns. Much of my work involves higher-order network models to capture complex group interactions, as well as temporal networks to study how these groups evolve over time. More recently, I’ve been exploring the opportunities and challenges of using Large Language Models in social science research.
+
+Outside of academia, I love digging into the soundscape of the (mostly Italian) underground music scene. What this means is, I know many bands with quirky names. Have you heard of Katana Koala Kiwi? You can find some obscure playlists [here](https://open.spotify.com/user/11157881664?si=8WpSXMoNS7-zysZQzOIjHA).

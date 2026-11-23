@@ -1,0 +1,283 @@
+# Site-wide profile: drives the header, home page, CV page, and metadata.
+name: Andrea Failla
+role: Postdoctoral Research Fellow
+organizations:
+  - name: ISTI-CNR
+    url: https://www.isti.cnr.it/
+description: >-
+  Andrea Failla is a postdoctoral research fellow at ISTI-CNR (Pisa, Italy) working on
+  network science for computational social science.
+avatar: media/avatar.png
+cv: /uploads/resume.pdf
+site_url: https://andreafailla.github.io
+twitter: AndreaFailla4
+
+# icon: Font Awesome class (fa-solid / fa-brands) or Academicons class (ai)
+links:
+  - label: E-mail
+    icon: fa-solid fa-at
+    url: mailto:andrea.failla@isti.cnr.it
+  - label: Google Scholar
+    icon: ai ai-google-scholar
+    url: https://scholar.google.com/citations?user=6tQd-PIAAAAJ
+  - label: ORCID
+    icon: ai ai-orcid
+    url: https://orcid.org/0009-0009-6162-0274
+  - label: GitHub
+    icon: fa-brands fa-github
+    url: https://github.com/andreafailla
+  - label: Bluesky
+    icon: fa-brands fa-bluesky
+    url: https://bsky.app/profile/andreajpg.bsky.social
+  - label: X
+    icon: fa-brands fa-x-twitter
+    url: https://twitter.com/AndreaFailla4
+  - label: LinkedIn
+    icon: fa-brands fa-linkedin
+    url: https://www.linkedin.com/in/andrea-failla-8990551a1/
+
+interests:
+  - Online Social Networks
+  - Higher-order, Temporal, and Attributed Networks
+  - Large Language Models and social simulation
+
+# ---------------------------------------------------------------- CV (rendered on /cv/)
+# Dates: YYYY, YYYY-MM, or YYYY-MM-DD. Omit `end` for ongoing items.
+
+positions:
+  - title: Postdoctoral Research Fellow
+    organization: ISTI-CNR, Pisa
+    start: 2025-11
+    summary: Project "Big Data Analytics and Artificial Intelligence 2.0 – BDAI 2.0".
+  - title: Research Associate
+    organization: KDD Lab, ISTI-CNR, Pisa
+    start: 2023-01
+    end: 2025-10
+    summary: 'Research activity "Attributed Dynamic Hypergraph Modeling of Social Interactions", SoBigData++ project.'
+  - title: Research Fellow
+    organization: Department of Computer Science, University of Pisa
+    logo: media/icons/unipi.svg
+    start: 2022-09
+    end: 2022-10
+    summary: >-
+      Implemented a web genome browser for the visualization and analysis of 'omics' data for the
+      study of Rett syndrome. Ended early due to incompatibility with the PhD scholarship.
+  - title: Intern
+    organization: Department of Computer Science, University of Pisa
+    logo: media/icons/unipi.svg
+    start: 2022-02
+    end: 2022-04
+    summary: Project "Hypergraph Modeling of Social Interactions". Tutor Prof. Dino Pedreschi.
+
+education:
+  - degree: National PhD in Artificial Intelligence for Society
+    institution: University of Pisa
+    start: 2022-11
+    end: 2026-07
+    summary: |
+      Thesis: "Pairwise and Higher-Order Mixing Patterns in Online Social Networks".
+      Supervisors: Dr. Giulio Rossetti, Dr. Rémy Cazabet.
+  - degree: MSc in Digital Humanities (LM-43)
+    institution: University of Pisa
+    start: 2020
+    end: 2022-09
+    summary: |
+      110/110 cum laude. Thesis: "Towards Attributed Stream-Hypernetwork Analysis: Structure, Features
+      and Dynamics of Complex Social Systems". Advisors: Prof. Giulio Rossetti, Dr. Salvatore Citraro.
+    link:
+      label: Read thesis
+      url: https://etd.adm.unipi.it/theses/available/etd-07292022-114220/
+  - degree: BSc in Linguistic and Cultural Mediation (L-12)
+    institution: University for Foreigners of Siena
+    start: 2017
+    end: 2020-10
+    summary: 110/110. Advisor Prof. Liana Tronci.
+
+training:
+  - date: 2025-06
+    title: Summer School "From Data to Social Innovation"
+    organization: SoBigData, Baratti, Italy
+  - date: 2024-05
+    title: 'Spring School "Complex Networks: Theory, Methods, and Applications"'
+    organization: Lake Como School, Como, Italy
+  - date: 2023-06
+    title: Summer School "AI & Society"
+    organization: University of Pisa, La Maddalena, Italy
+  - date: 2022-08
+    title: Summer School "Introduction to Complex Systems"
+    organization: Utrecht University, Utrecht, The Netherlands
+
+stays:
+  - start: 2025-03
+    end: 2025-05
+    host: Prof. Carlos H. G. Ferreira, Federal University of Ouro Preto, Brazil
+    summary: Data collection and analysis on Bluesky starter packs with network analysis and NLP.
+  - start: 2024-11
+    end: 2025-01
+    host: Prof. Rémy Cazabet, LIRIS (DM2L), CNRS/INSA Lyon/University of Lyon 1, France
+    summary: Temporal dynamics of alt-right communities on Reddit and Scored.co.
+  - start: 2023-05
+    end: 2023-05
+    host: Prof. Rémy Cazabet, LIRIS (DM2L), CNRS/INSA Lyon/University of Lyon 1, France
+    summary: Methods to track the evolution of communities and clusters.
+
+research_projects:
+  - name: "SoBigData++: Social Mining and Big Data Ecosystem"
+    years: 2022–2024
+    url: http://www.sobigdata.eu
+  - name: "SoBigData.it: Strengthening the Italian RI for Social Mining and Big Data Analytics"
+    years: 2023–2025
+    url: https://sobigdata.it
+  - name: "FAIR: Future AI Research"
+    years: 2023–2025
+    url: https://fondazione-fair.it/
+
+# Teaching card: keep entries minimal (years, course, where). Optional: url (course page), video.
+teaching:
+  - years: 2026–2027
+    title: Teaching assistant, Fondamenti Teorici e Programmazione
+    where: BSc in Digital Humanities, University of Pisa
+  - years: 2025–2026
+    title: Network Analysis and Visualization
+    where: YADESA online training, Ibn Haldun University
+    url: /teaching/netsciviz/
+    video: https://www.youtube.com/watch?v=ArVADQL0f78
+  - years: 2025–2026
+    title: How the Web Becomes Research Data – Collecting Digital Texts for Social Science Research
+    where: YADESA Summer and Winter Schools, Ibn Haldun University, Istanbul
+    video: https://www.youtube.com/watch?v=gRBrCo3o0bg
+  - years: 2025–2026
+    title: Generative AI – the What, the How, and the Why
+    where: SoBigData "Challenge Us" program
+    url: /teaching/llm/
+  - years: 2024–2025
+    title: Online Social Network Analysis and Mining
+    where: International Master DISS, Université Claude Bernard Lyon 1
+    url: /teaching/osnam/
+  - years: 2023–present
+    title: Teaching assistant, Social Network Analysis
+    where: Master "Big Data Analytics and Social Mining", University of Pisa
+  - years: 2023–2024
+    title: Teaching assistant, Intro to Social Network Analysis
+    where: Incontra Informatica, University of Pisa
+  - years: 2021–2022
+    title: Teaching assistant, Seminario di Cultura Digitale
+    where: MSc in Digital Humanities, University of Pisa
+
+supervision:
+  - year: ongoing
+    student: Cinzia Lestini
+    title: Analysis of interactions on the social network Bluesky
+    degree: MSc Data Science and Business Informatics, University of Pisa
+  - year: 2025
+    student: Giuseppe Onesto
+    title: Political classification of Reddit texts based on the multidimensional Political Compass model
+    degree: MSc Data Science and Business Informatics, University of Pisa
+  - year: 2025
+    student: Biancamaria Bombino
+    title: "Politics and Mental Health: A Data-Driven Analysis of Toxicity and Moral Values in Public Discourse"
+    degree: MSc Data Science and Business Informatics, University of Pisa
+  - year: 2024
+    student: Veronica Mesina
+    title: "Analysis of Twitter data on public response to COVID-19 policies in Italy: which authorities and which influence?"
+    degree: MSc Digital Humanities, University of Pisa
+  - year: 2024
+    student: Davide Perra
+    title: "Tendency toward the extreme: Applicative case studies on Reddit"
+    degree: MSc Data Science and Business Informatics, University of Pisa
+  - year: 2023
+    student: Francesco Di Cursi
+    title: "Peering into YouTube's Abyss: Analyzing NSFL Content and Empowering Users with Collaborative Risk Annotations"
+    degree: MSc Digital Humanities, University of Pisa
+
+reviewing:
+  journals: [ACM TIST, ACM TWEB, Big Data & Society, IJDSA, Journal of Complex Networks,
+             Journal of Computational Social Science, Network Science, PLOS ONE, Scientific Data,
+             Scientific Reports]
+  conferences: [ASONAM, HHAI, NetSci, ACM SIGKDD, ECML PKDD, ITADATA, FRCCS]
+
+awards:
+  - title: Young Researcher Award "Matteo Dellepiane"
+    date: 2025-11-18
+    awarder: ISTI-CNR
+    summary: For the scientific production of 2024.
+  - title: Best Poster Award
+    date: 2025-11-18
+    awarder: ISTI-CNR (ISTI Day 2025)
+    summary: 'For the poster "YSocial: an AI-powered Social Media Virtual Twin".'
+  - title: Best Project Award
+    date: 2025-06-28
+    awarder: SoBigData Summer School
+    summary: For the project "A preparedness framework for predicting language needs of refugees arriving in Europe".
+  - title: Best Oral Presentation Award
+    date: 2024-12-11
+    awarder: 13th International Conference on Complex Networks and their Applications (CNA 2024)
+    summary: 'For presenting "Y Social: an LLM-powered Social Media Digital Twin".'
+  - title: Best Poster Award
+    date: 2024-12-11
+    awarder: 13th International Conference on Complex Networks and their Applications (CNA 2024)
+    summary: 'For the poster of "Bots of a Feather: Mixing Biases in LLMs'' Opinion Dynamics".'
+  - title: Best Paper Award
+    date: 2024-09-05
+    awarder: International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2024)
+    summary: 'For "Beyond Boundaries: Capturing Social Segregation on Hypernetworks".'
+  - title: Best Project Award
+    date: 2023-06-09
+    awarder: AI & Society Summer School
+    summary: 'For the project "IUS: Intelligent University System".'
+
+grants:
+  - title: "GYM: Grants for Young Mobility"
+    funder: ISTI-CNR
+    start: 2024-12
+    end: 2025-01
+  - title: Mobility grant "Aide à la mobilité doctorale"
+    funder: Université Claude Bernard Lyon 1
+    start: 2024-11
+    end: 2024-12
+  - title: PhD scholarship
+    funder: University of Pisa
+    start: 2022-11
+    end: 2025-10
+  - title: Research fellowship grant
+    funder: University of Pisa
+    start: 2022-09
+    end: 2023-02
+
+other_work:
+  - title: Freelance Data Analyst
+    organization: Fiverr.com
+    logo: media/icons/fiverr.svg
+    start: 2021
+    end: 2022-10
+    summary: Data mining for clients on textual, tabular, and network data.
+  - title: Activist and collaborator
+    organization: Cademia Siciliana
+    start: 2020-05
+    end: 2022-10
+    summary: Proofreading, translations, analysis.
+  - title: "Internship: Linguistic and Cultural Mediator"
+    organization: ISS Sarrocchi, Siena
+    start: 2019-09
+    end: 2020-02
+    summary: Italian as a second language support, social integration.
+
+skills:
+  - area: Programming
+    tools: [Python, Java, R, SQL, PySpark, HTML/CSS/JavaScript]
+  - area: AI / LLM
+    tools: [Transformers, LangChain, AutoGen, Ollama]
+  - area: Network analysis
+    tools: [Gephi, Cytoscape, KNIME]
+
+languages:
+  - name: Italian
+    level: Native
+  - name: English
+    level: C2
+  - name: Portuguese
+    level: B1
+  - name: Spanish
+    level: A2
+  - name: Sicilian
+    level: Fluent

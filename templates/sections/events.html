@@ -1,0 +1,78 @@
+<section class="tile span-7 reveal" id="events" aria-labelledby="events-h" data-filterable data-noun="events">
+  <header class="card-head"><h2 id="events-h" class="card-title"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Events &amp; talks</h2></header>
+  <div class="list-tools">
+    <label class="search">
+      <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      <input type="search" placeholder="Search events, venues, places" data-search-input aria-label="Search events">
+    </label>
+    {{ m.facet_bar("role", "Role", role_facets, event_count) }}
+    <p class="list-status mono" data-status aria-live="polite">{{ event_count }} events</p>
+  </div>
+  <div class="list-box" data-list tabindex="0" aria-label="Event list">
+  {% for year, items in event_years %}
+  <section data-group aria-label="{{ year }}">
+    <h3 class="box-year">{{ year }}</h3>
+    <ul class="event-list">
+      {% for e in items %}
+      <li data-item data-facets="role:{{ slug(e.role) }}"
+          data-search="{{ (e.title ~ ' ' ~ e.venue ~ ' ' ~ e.role ~ ' ' ~ e.date.year) | lower }}">
+        <span class="mono meta">{{ e.when or (e.date | date("%d %b")) }}</span>
+        <div>
+          <p class="event-line">
+            <span class="role">{{ e.role }}</span>
+            {% if e.url %}<a href="{{ e.url | href }}">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}
+            {% if e.date > today %}<span class="tag">upcoming</span>{% endif %}
+          </p>
+          <p class="small muted">{{ e.venue }}</p>
+          {% if e.links or e.abstract %}
+          <div class="pub-actions">
+            {% for l in e.links or [] %}<a class="chip" href="{{ l.url | href }}">{{ l.label }}</a>{% endfor %}
+            {% if e.abstract %}<details class="drawer"><summary class="chip">Abstract</summary><div class="drawer-body"><p>{{ e.abstract }}</p></div></details>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+  <p class="empty muted" data-empty hidden>No events match. <button class="chip" type="button" data-reset>Clear filters</button></p>
+  </div>
+</section>
+
+<section class="tile span-5 reveal" id="teaching" aria-labelledby="teaching-h">
+  <header class="card-head"><h2 id="teaching-h" class="card-title"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i> Teaching</h2></header>
+  {% macro teaching_list(items) %}
+  <ul class="cv-list">
+    {% for t in items %}
+    <li><span class="mono meta">{{ t.years }}</span><br>
+      {% if t.url %}<a href="{{ t.url }}"><strong>{{ t.title }}</strong> <span aria-hidden="true">↗</span></a>{% else %}<strong>{{ t.title }}</strong>{% endif %}
+      <br><span class="muted small">{{ t.where }}</span>
+      {% if t.video %}<br><a class="chip video-chip" href="{{ t.video }}"><i class="fa-brands fa-youtube" aria-hidden="true"></i> Video</a>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endmacro %}
+  {{ teaching_list(profile.teaching[:teaching_shown]) }}
+  {% if profile.teaching | length > teaching_shown %}
+  <details class="more-block">
+    <summary class="chip">Show all <span class="count">{{ profile.teaching | length - teaching_shown }} more</span></summary>
+    {{ teaching_list(profile.teaching[teaching_shown:]) }}
+  </details>
+  {% endif %}
+  {% set listed = profile.teaching | selectattr("url") | map(attribute="url") | list %}
+  {% set extra = courses | rejectattr("url", "in", listed) | list %}
+  {% if extra %}
+  <p class="label">Course pages</p>
+  <ul class="cv-list">
+    {% for c in extra %}<li><a href="{{ c.url }}">{{ c.title }}</a> <span class="muted small">· {{ c.summary }}</span></li>{% endfor %}
+  </ul>
+  {% endif %}
+  <details class="more-block">
+    <summary class="chip">Thesis co-supervision <span class="count">{{ profile.supervision | length }}</span></summary>
+    <ul class="cv-list">
+      {% for s in profile.supervision %}
+      <li><span class="mono meta">{{ s.year }}</span> {{ s.student }}, <em>{{ s.title }}</em><br><span class="muted small">{{ s.degree }}</span></li>
+      {% endfor %}
+    </ul>
+  </details>
+</section>

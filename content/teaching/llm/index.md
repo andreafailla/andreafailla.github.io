@@ -1,17 +1,13 @@
 ---
 title: Generative AI and Large Language Models
 summary: Introductory lecture on Generative AI and Large Language Models
-date: 2025-09-11
-type: docs
-math: false
+date: '2025-09-11'
 tags:
-  - Generative AI
-  - LLM
-  - Prompt Engineering
-image:
-  caption:
+- Generative AI
+- LLM
+- Prompt Engineering
+image: featured.png
 ---
-
 This is the page for the **Generative AI and Large Language Models** lecture, an introductory course covering the foundations, practical usage, and safety aspects of modern LLM-based systems.
 This course was offered as part of [SoBigData's Challenge Us](https://sobigdata.it/challenge-us-2025/it) program.
 

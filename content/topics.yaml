@@ -1,0 +1,16 @@
+# Research themes. Each paper in publications.yaml lists its themes under `topics`.
+# On the home page every theme is a hyperedge of the "research map" hypergraph,
+# and the publication list can be filtered by theme (?topic=<id>).
+# `short` (optional) is the label drawn inside the map, where space is tight.
+
+- id: higher-order
+  label: Higher-order networks
+- id: temporal
+  label: Temporal dynamics
+- id: mixing
+  label: Mixing patterns (homophily & segregation)
+  short: Mixing patterns
+- id: platforms
+  label: Online platforms
+- id: llm
+  label: LLMs & social simulation

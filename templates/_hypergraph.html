@@ -1,0 +1,30 @@
+{# Research map: papers (nodes) x themes (hyperedges). Layout comes from hypergraph.py. #}
+<div class="hg-wrap">
+  <svg class="hg" viewBox="0 0 {{ graph.width }} {{ graph.height }}" role="img"
+       aria-label="Hypergraph of {{ graph.nodes | length }} papers grouped into {{ graph.hubs | length }} research themes">
+    <g class="hg-hulls">
+      {% for h in graph.hulls %}
+      <polygon class="hull" data-topic="{{ h.id }}" points="{{ h.points }}"/>
+      {% endfor %}
+    </g>
+    <g class="hg-nodes">
+      {% for n in graph.nodes %}
+      <a href="{{ n.url }}" class="node{{ ' featured' if n.featured }}" data-node="{{ n.id }}" data-topics="{{ n.topics | join(' ') }}"
+         data-label="{{ n.title }} ({{ n.year }})" style="--d: {{ loop.index0 % 7 }}">
+        <title>{{ n.title }} ({{ n.year }})</title>
+        <circle cx="{{ n.x }}" cy="{{ n.y }}" r="{{ 7 if n.featured else 5 }}"/>
+      </a>
+      {% endfor %}
+    </g>
+    <g class="hg-hubs">
+      {% for h in graph.hubs %}
+      <a href="?topic={{ h.id }}#publications" class="hub" data-topic="{{ h.id }}">
+        <title>{{ h.label }}: {{ h.count }} papers</title>
+        <rect x="{{ (h.x - h.w / 2) | round(1) }}" y="{{ (h.y - h.h / 2) | round(1) }}" width="{{ h.w | round(1) }}" height="{{ h.h }}" rx="{{ h.h / 2 }}"/>
+        <text x="{{ h.x | round(1) }}" y="{{ (h.y + 4) | round(1) }}" text-anchor="middle">{{ h.label }}</text>
+      </a>
+      {% endfor %}
+    </g>
+  </svg>
+  <p class="hg-tip mono" aria-hidden="true" hidden></p>
+</div>

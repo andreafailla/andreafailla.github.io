@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{# One-page site: every section is a card. Section partials live in templates/sections/. #}
+{% block main %}
+<div class="wrap page-grid">
+  {% include "sections/hero.html" %}
+  {% include "sections/about.html" %}
+  {% include "sections/research.html" %}
+  {% include "sections/projects.html" %}
+  {% include "sections/events.html" %}
+  {% include "sections/contact.html" %}
+</div>
+{% endblock %}

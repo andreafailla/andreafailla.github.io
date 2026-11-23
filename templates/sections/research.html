@@ -1,0 +1,32 @@
+<section class="tile span-12 reveal" id="research" aria-labelledby="research-h">
+  <header class="card-head card-head-row">
+    <div><h2 id="research-h" class="card-title"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Research &amp; publications</h2></div>
+    <p class="small muted">
+      {% for l in profile.links if l.label in ("Google Scholar", "ORCID") %}<a href="{{ l.url }}">{{ l.label }}</a> · {% endfor %}<a href="/publications.bib">BibTeX</a></p>
+  </header>
+
+  <div class="research-top tile-map">
+    {% include "_hypergraph.html" %}
+  </div>
+
+  <div class="pub-block" id="publications" data-filterable data-noun="papers" aria-label="All publications">
+    <div class="list-tools">
+      <label class="search">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input type="search" placeholder="Search {{ pub_count }} papers by title, author, venue, year" data-search-input aria-label="Search publications">
+      </label>
+      {{ m.facet_bar("topic", "Theme", topic_facets, pub_count) }}
+      {{ m.facet_bar("kind", "Type", kind_facets, pub_count) }}
+      <p class="list-status mono" data-status aria-live="polite">{{ pub_count }} papers</p>
+    </div>
+    <div class="list-box" data-list tabindex="0" aria-label="Publication list">
+      {% for year, items in pub_years %}
+      <section data-group aria-label="{{ year }}">
+        <h4 class="box-year">{{ year }}</h4>
+        {% for p in items %}{{ m.pub_entry(p) }}{% endfor %}
+      </section>
+      {% endfor %}
+      <p class="empty muted" data-empty hidden>No papers match. <button class="chip" type="button" data-reset>Clear filters</button></p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% set page_title = (title ~ " · " ~ profile.name) if title is defined else profile.name %}
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ description if description is defined else profile.description }}">
+  <meta name="author" content="{{ profile.name }}">
+  <link rel="canonical" href="{{ profile.site_url }}{{ url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ description if description is defined else profile.description }}">
+  <meta property="og:url" content="{{ profile.site_url }}{{ url }}">
+  <meta property="og:image" content="{{ profile.site_url }}{{ profile.avatar | image('avatar') }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{ profile.twitter }}">
+  <link rel="icon" href="{{ profile.avatar | image('logo') }}">
+  <script>
+    document.documentElement.classList.add("js");
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/style.css?v={{ asset_v }}">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="/" aria-label="{{ profile.name }}, home"><span class="monogram" aria-hidden="true">af</span><span class="brand-name">{{ profile.name }}</span></a>
+      <nav aria-label="Main">
+        <ul>
+          {% for label, link in nav %}
+          <li><a href="{{ link }}" data-nav="{{ link.split('#')[-1] }}"{% if (label == "Publications" and url.startswith("/publications/")) or (label == "Teaching" and url.startswith("/teaching/")) %} aria-current="page"{% endif %}>{{ label }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+        <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    {% block main %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>© {{ year }} {{ profile.name }} · Content licensed
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+      <ul class="icon-links">
+        {% for l in profile.links %}
+        <li><a href="{{ l.url }}" aria-label="{{ l.label }}" title="{{ l.label }}"><i class="{{ l.icon }}" aria-hidden="true"></i></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </footer>
+  <script src="/assets/site.js?v={{ asset_v }}" defer></script>
+  {% if dev %}
+  <script>
+    // Dev server only (python build.py --serve): reload when a rebuild finishes.
+    (function () {
+      var last = null;
+      setInterval(function () {
+        fetch("/build-id.txt", { cache: "no-store" }).then(function (r) { return r.ok ? r.text() : null; })
+          .then(function (id) { if (id && last && id !== last) location.reload(); if (id) last = id; })
+          .catch(function () {});
+      }, 1000);
+    })();
+  </script>
+  {% endif %}
+</body>
+</html>

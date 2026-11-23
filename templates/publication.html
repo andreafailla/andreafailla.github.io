@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% set description = (pub.abstract or (pub.title ~ ". " ~ pub.authors | join(", ")))[:300] %}
+{% block head %}
+  {# Highwire Press tags: what Google Scholar reads to index this paper (and its PDF). #}
+  <meta name="citation_title" content="{{ pub.title }}">
+  {% for a in pub.authors %}<meta name="citation_author" content="{{ a }}">
+  {% endfor %}
+  <meta name="citation_publication_date" content="{{ (pub.date | string).replace('-', '/') if pub.date else pub.year }}">
+  {% if pub.type == "article" %}<meta name="citation_journal_title" content="{{ pub.venue }}">{% endif %}
+  {% if pub.type == "inproceedings" %}<meta name="citation_conference_title" content="{{ pub.venue }}">{% endif %}
+  {% if pub.type in ("phdthesis", "mastersthesis") %}<meta name="citation_dissertation_institution" content="{{ pub.institution }}">{% endif %}
+  {% if pub.volume %}<meta name="citation_volume" content="{{ pub.volume }}">{% endif %}
+  {% if pub.number %}<meta name="citation_issue" content="{{ pub.number }}">{% endif %}
+  {% if pub.pages %}{% set pg = (pub.pages | string).split("--") %}
+  <meta name="citation_firstpage" content="{{ pg[0] }}">
+  {% if pg | length > 1 %}<meta name="citation_lastpage" content="{{ pg[1] }}">{% endif %}{% endif %}
+  {% if pub.publisher %}<meta name="citation_publisher" content="{{ pub.publisher }}">{% endif %}
+  {% if pub.doi %}<meta name="citation_doi" content="{{ pub.doi }}">{% endif %}
+  {% if pub.arxiv %}<meta name="citation_arxiv_id" content="{{ pub.arxiv }}">{% endif %}
+  {% if pub.links.pdf %}<meta name="citation_pdf_url" content="{{ (profile.site_url ~ (pub.links.pdf | href)) if pub.links.pdf.startswith('/') else pub.links.pdf }}">{% endif %}
+  <meta name="citation_abstract_html_url" content="{{ profile.site_url }}{{ pub.url }}">
+  <script type="application/ld+json">{{ {
+    "@context": "https://schema.org", "@type": "ScholarlyArticle",
+    "headline": pub.title, "name": pub.title, "datePublished": (pub.date | string) if pub.date else (pub.year | string),
+    "author": pub.authors | map("string") | list, "isPartOf": pub.venue or "",
+    "abstract": pub.abstract or "", "url": profile.site_url ~ pub.url,
+    "sameAs": ("https://doi.org/" ~ pub.doi) if pub.doi else ""
+  } | tojson }}</script>
+{% endblock %}
+{% block main %}
+<div class="wrap page narrow">
+  <nav class="crumbs mono small" aria-label="Breadcrumb"><a href="/#publications">Publications</a> / {{ pub.year }}</nav>
+  <article class="paper">
+    <p class="mono eyebrow">{{ pub.type | replace("inproceedings", "conference paper") | replace("phdthesis", "PhD thesis") | replace("mastersthesis", "master's thesis") }} · {{ pub.year }}</p>
+    <h1 class="paper-title">{{ pub.title }}</h1>
+    <p class="pub-authors">{{ authors(pub.authors) }}</p>
+    <p class="pub-venue">{% if pub.venue %}<em>{{ pub.venue }}</em>{% endif %}{% if pub.institution and pub.institution not in (pub.venue or "") %}, {{ pub.institution }}{% endif %}</p>
+    {% if pub.award %}<p class="award"><i class="fa-solid fa-award" aria-hidden="true"></i> {{ pub.award }}</p>{% endif %}
+    {% if pub.note %}<p class="small muted">{{ pub.note }}</p>{% endif %}
+    <div class="pub-actions">{{ m.link_chips(pub) }}</div>
+    {% if pub.abstract %}
+    <section class="prose">
+      <h2>Abstract</h2>
+      <p>{{ pub.abstract }}</p>
+    </section>
+    {% endif %}
+    <section>
+      <h2>Cite</h2>
+      <div class="drawer-body static"><pre><code>{{ pub.bibtex }}</code></pre>
+        <button class="chip" type="button" data-copy>Copy BibTeX</button></div>
+    </section>
+  </article>
+  <p><a class="more" href="/#publications"><span aria-hidden="true">←</span> All publications</a></p>
+</div>
+{% endblock %}

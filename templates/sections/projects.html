@@ -1,0 +1,13 @@
+<section class="tile span-12 reveal" id="projects" aria-labelledby="projects-h">
+  <header class="card-head"><h2 id="projects-h" class="card-title"><i class="fa-solid fa-code" aria-hidden="true"></i> Projects</h2></header>
+  <div class="grid cols-4">
+    {% for p in projects %}
+    <a class="card project" href="{{ p.url | href }}">
+      <p class="mono meta">{{ p.date | date("%Y") }}{% if p.tags %} · {{ p.tags | join(" · ") }}{% endif %}</p>
+      <h3>{{ p.title }}</h3>
+      <p class="small muted">{{ p.summary }}</p>
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
