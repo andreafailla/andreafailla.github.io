@@ -1,0 +1,14 @@
+# Hand-written news items for the home page and /news/.
+# The feed also includes, automatically: publications with a `date`, events, and awards.
+# Fields: date (YYYY-MM-DD or YYYY-MM), text (Markdown)
+
+- date: 2025-11-01
+  text: Started as a postdoctoral research fellow at ISTI-CNR, Pisa, in the BDAI 2.0 project.
+
+- date: 2025-03-01
+  text: >-
+    Visiting Prof. Carlos H. G. Ferreira's group at the Federal University of Ouro Preto, Brazil,
+    to study Bluesky starter packs (until May 2025).
+
+- date: 2024-11-01
+  text: Visiting the DM2L group at LIRIS, Lyon, hosted by Prof. Rémy Cazabet (until January 2025).

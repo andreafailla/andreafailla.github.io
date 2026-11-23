@@ -1,0 +1,672 @@
+# Publications: the single source of truth for /publications/ and the home page.
+#
+# Fields: id, title, authors, year, type (article | inproceedings | preprint | poster | phdthesis | mastersthesis | misc),
+#   date (YYYY-MM-DD, used by News), venue, institution (theses), volume, number, pages, publisher, doi, arxiv, abstract,
+#   topics (ids from topics.yaml), featured (true -> shown on home page), award, note, hidden (true -> not rendered),
+#   aliases (other titles of the same work, e.g. the preprint title; used by the importer),
+#   links: {pdf, code, dataset, slides, poster, video, project}
+#
+# scripts/import_scholar.py appends new papers at the end of this file.
+# Order does not matter: pages sort by year, then title.
+
+- id: cau2026collective
+  title: Collective Opinion Dynamics in Structured LLM Populations
+  authors:
+  - Erica Cau
+  - Andrea Failla
+  - Giulio Rossetti
+  year: 2026
+  date: '2026-04-13'
+  type: preprint
+  venue: arXiv
+  arxiv: '2604.11312'
+  topics:
+  - llm
+  aliases:
+  - Network effects and agreement drift in LLM debates
+  abstract: >-
+    Large Language Models are increasingly deployed as interacting agents in settings such as online platforms,
+    recommendation systems, and multi-agent applications. Understanding the collective behaviors that
+    emerge from their interactions is therefore increasingly crucial, especially as these behaviors may
+    shape public opinion and contribute to polarization. In this work, we investigate how network structure
+    and group composition shape the evolution of opinions in populations of LLM agents engaged in multi-round
+    debates. We generate networks with controlled levels of homophily and varying group sizes, and perform
+    ten independent runs per configuration. The results show that LLM agents exhibit patterns that are
+    highly sensitive to network structure, relative group sizes, and to the model itself. We highlight
+    that even within LLM populations, low homophily facilitates convergence by increasing opportunities
+    for cross-group interaction, whereas higher homophily limits cross-group exposure and can preserve
+    distinct opinion states, consistent with previous research. We further show that the choice of LLM
+    substantially affects the resulting dynamics, with different models exhibiting different patterns
+    of opinion updating under comparable network conditions. At the individual level, providing agents
+    with information about their local neighborhood further modulates opinion transitions, revealing substantial
+    differences between models in their sensitivity to local social context. Overall, our findings show
+    that the collective dynamics of LLM populations arise from interactions among model-specific behavior,
+    network structure, population composition, and local social information.
+
+- id: mesina2026lowvocality
+  title: Low-vocality Engagement and Participation Dynamics on Bluesky
+  authors:
+  - Veronica Mesina
+  - Andrea Failla
+  - Luca Pappalardo
+  - Giulio Rossetti
+  year: 2026
+  date: '2026-06-19'
+  type: preprint
+  venue: arXiv
+  arxiv: '2606.21665'
+  topics:
+  - platforms
+  aliases:
+  - Low-vocality engagement shapes online participation
+  abstract: >-
+    Online participation is often measured through visible expression, especially posting, yet many consequential
+    forms of engagement occur through less vocal actions such as liking and following. Here we study how
+    users inhabit Bluesky by reconstructing participation profiles from more than three billion activity
+    records produced by a near-complete sample accounting for more than 80\% of registered users. We aggregate
+    behavior into monthly user-level observations and distinguish two dimensions that are often conflated
+    in platform analytics: intensity, capturing how much users engage, and style, capturing how engagement
+    is expressed across actions. We find that vocal production is highly concentrated, but low-posting
+    behavior does not imply absence from platform participation. High-intensity engagement is most strongly
+    associated with liking rather than posting, while posting-oriented participation is more common among
+    low-intensity users, indicating that visibility and sustained engagement should not be conflated.
+    Transition patterns suggest that high-intensity likers and posters could be described as attractors;
+    network-building redirects users within the active space; whereas observed inactivity acts as a persistent
+    boundary that selectively limits re-entry. Higher-order motifs further show that inactivity often
+    interrupts rather than erases prior regimes, and that low-intensity liking can precede durable high-intensity
+    engagement. These results show that online participation is structured by differentiated low-vocality
+    practices, calling for a shift from post-centered measures of activity toward dynamic accounts of
+    platform presence. We identify a broader challenge for computational social science: platform participation
+    cannot be adequately understood through the behavior of vocal minorities alone.
+
+- id: failla2026pairwise
+  title: Pairwise and Higher-Order Mixing Patterns in Online Social Networks
+  authors:
+  - Andrea Failla
+  year: 2026
+  type: phdthesis
+  venue: National PhD in Artificial Intelligence
+  institution: University of Pisa
+  topics:
+  - higher-order
+  - mixing
+  - platforms
+
+- id: cau2026socialsim
+  title: 'Social Simulations: from Agent-Based Modeling to Digital Twins'
+  authors:
+  - Erica Cau
+  - Andrea Failla
+  - Valentina Pansanella
+  - Giulio Rossetti
+  year: 2026
+  date: '2026-07-15'
+  type: preprint
+  venue: arXiv
+  arxiv: '2607.13693'
+  topics:
+  - llm
+  note: >-
+    Book chapter under review for the Encyclopedia of Social Network Analysis and Mining (3rd ed.)
+  abstract: >-
+    This book chapter covers the evolution of social simulation from classical agent-based models, in
+    which agents interact according to explicitly defined behavioral rules, to AI-enhanced simulations
+    based on Large Language Models and, ultimately, Social Digital Twins: high-fidelity, data-driven representations
+    of real-world socio-technical systems. Along this trajectory, we discuss the main methodological foundations,
+    applications, advantages, and limitations of each paradigm, highlighting the progressive shift from
+    abstract models designed to investigate general social mechanisms toward increasingly realistic computational
+    representations of specific social systems.
+
+- id: cauteruccio2026structure
+  title: Structure and dynamics of temporal hypergraphs via multi-rooted ego networks
+  authors:
+  - Francesco Cauteruccio
+  - Salvatore Citraro
+  - Andrea Failla
+  - Giulio Rossetti
+  year: 2026
+  date: '2026-05-09'
+  type: article
+  venue: Social Network Analysis and Mining
+  volume: '16'
+  pages: '64'
+  publisher: Springer
+  doi: 10.1007/s13278-026-01603-6
+  topics:
+  - higher-order
+  - temporal
+  abstract: >-
+    Ego-networks capture the local structure around a central entity. In this paper, we propose a framework
+    that extends static pairwise settings to temporal hypergraphs and consists of two main components,
+    namely, (i) the concept of Multi-Rooted Ego-Network (REN), which generalizes traditional ego-networks
+    centered on a single node to potentially multiple nodes; and, (ii) similarity criteria for comparing
+    consecutive RENs across time. The framework also enables the formalization of events such as , allowing
+    the identification and categorization of persistent local structures. Through empirical evaluation
+    on real-world temporal hypergraphs from the SocioPatterns database, we highlight the expressiveness
+    of our approach in capturing and analyzing the evolution of localized group dynamics. Moreover, we
+    focus on a case study involving diachronic word embeddings, highlighting correlations between statistical
+    descriptors of RENs’ similarity time series and standard polysemy measures. This shows the flexibility
+    of our framework across many application domains.
+
+- id: failla2026starter
+  title: Structure, Topics, and Diffusion Effects of Bluesky Starter Packs
+  authors:
+  - Andrea Failla
+  - Vander Freitas
+  - Giulio Rossetti
+  - Carlos Ferreira
+  year: 2026
+  date: '2026-08-18'
+  type: preprint
+  venue: arXiv
+  arxiv: '2608.17489'
+  topics:
+  - platforms
+  abstract: >-
+    User discovery is a central challenge in online social platforms, particularly during onboarding.
+    Bluesky, a decentralized microblogging platform built on the AT Protocol, introduced starter packs:
+    curated collections of accounts that users can follow in a single action to bootstrap their social
+    network. In this paper, we present a large-scale empirical analysis of more than 50,000 English-language
+    starter packs and over 600,000 associated users. We characterize their structural organization, topical
+    composition, and impact on content diffusion. Our results show that starter packs form a highly interconnected
+    ecosystem with substantial overlap across packs that largely reflects pre-existing communities. Topic
+    modeling reveals a skewed landscape dominated by automatically generated personal packs alongside
+    several thematic communities, which exhibit similar structural properties but markedly different adoption
+    patterns. Finally, a matched event-study analysis shows that inclusion in a starter pack is strongly
+    associated with a substantial increase in short-term repost activity.
+
+- id: azevedo2026brazilian
+  title: 'The Brazilian Vaccination Debate on YouTube: Topics, Perspectives, and Engagement Dynamics'
+  authors:
+  - Matheus S. Azevedo
+  - Geovana S. de Oliveira
+  - Andrea Failla
+  - Alexandre M. de Sousa
+  - Fabricio Murai
+  - Ana Paula C. da Silva
+  - Carlos H. G. Ferreira
+  year: 2026
+  date: '2026-08-18'
+  type: preprint
+  venue: arXiv
+  arxiv: '2608.17502'
+  topics:
+  - platforms
+  abstract: >-
+    Vaccination debates are central to online public health communication, as COVID-19 intensified disputes
+    over scientific authority, institutional trust, and political identity. Yet studies often isolate
+    semantic structure, stance, misinformation, and engagement, leaving their interplay over time poorly
+    understood. We conduct a multilevel computational text analysis based on language models applied to
+    1.27 million Brazilian YouTube comments from 2018 to 2024, using what is, to our knowledge, the largest
+    dataset of Brazilian vaccine discourse on the Web. We contrast producer framing in titles with audience
+    discourse in comments, integrating Topic-derived themes with engagement metadata, conversational timing,
+    stance-derived vaccine positions, and pre-pandemic, pandemic, and post-pandemic periods. Results show
+    that COVID-19 dominates biomedical and informational themes in titles, whereas comments span personal
+    health reports, vaccine effects, information credibility, conspiracy narratives, and political disputes.
+    Health-related macro-topics dominate in scale and persistence, while conspiratorial and political
+    themes are associated with faster interactions and a greater concentration of vaccine-opposing engagement.
+    Post-pandemic activity remains centered on health experiences, vaccine effects, and information credibility,
+    indicating no return to the pre-pandemic thematic configuration. By integrating semantic, interactional,
+    stance, and temporal dimensions, this study shows how audiences reframe producer-framed health content
+    and how vaccine controversies persist beyond the acute pandemic period.
+
+- id: rossetti2024social
+  title: 'YSocial: An artificial intelligence powered social media virtual twin'
+  authors:
+  - Giulio Rossetti
+  - Massimo Stella
+  - Rémy Cazabet
+  - Katherine Abramski
+  - Salvatore Citraro
+  - Erica Cau
+  - Andrea Failla
+  - Virginia Morini
+  - Valentina Pansanella
+  year: 2026
+  date: '2026-07-18'
+  type: article
+  venue: Big Data & Society
+  volume: '13'
+  number: '3'
+  pages: '20539517261431576'
+  publisher: SAGE
+  doi: 10.1177/20539517261431576
+  arxiv: '2408.00818'
+  topics:
+  - llm
+  - platforms
+  featured: true
+  award: Best Oral Presentation Award, CNA 2024 · Best Poster Award, ISTI Day 2025
+  aliases:
+  - 'Y Social: an LLM-powered Social Media Digital Twin'
+  links:
+    code: https://github.com/YSocialTwin
+    project: https://y-not.social/
+  abstract: >-
+    This paper introduces YSocial, a new-generation virtual twin designed to replicate an online social
+    media platform. Digital and virtual twins are virtual replicas of physical systems that allow for
+    advanced analyses, control, experimentation, and scenario simulations. In the case of social media,
+    a virtual twin such as YSocial provides a powerful tool for researchers to simulate and understand
+    complex online interactions. YSocial leverages state-of-the-art large language models (LLMs) to replicate
+    sophisticated agent behaviors, enabling accurate simulations of user interactions, content dissemination,
+    and network dynamics. By integrating these aspects, YSocial offers valuable insights into user engagement,
+    information spread, and the impact of platform policies. Moreover, integrating LLMs allows YSocial
+    to generate nuanced textual content and predict user responses, facilitating the study of emergent
+    phenomena in online environments. To better characterize YSocial, we describe the rationale behind
+    its implementation, provide examples of the analyses that can be performed on the data it generates,
+    and discuss its relevance for multidisciplinary research.
+
+- id: failla2025characterizing
+  title: Characterizing User Archetypes and Discussions on Social Hypernetworks
+  authors:
+  - Andrea Failla
+  - Salvatore Citraro
+  - Giulio Rossetti
+  - Francesco Cauteruccio
+  year: 2025
+  date: '2025-09-16'
+  type: article
+  venue: Big Data and Cognitive Computing
+  volume: '9'
+  number: '9'
+  pages: '236'
+  publisher: MDPI
+  doi: 10.3390/bdcc9090236
+  arxiv: '2407.21753'
+  topics:
+  - higher-order
+  - platforms
+  aliases:
+  - Characterizing User Archetypes and Discussions on Scored.co
+  links:
+    pdf: https://www.mdpi.com/2504-2289/9/9/236/pdf?version=1758015146
+    dataset: https://doi.org/10.5281/zenodo.13142207
+  abstract: >-
+    In recent years, the proliferation of social platforms has drastically transformed how individuals
+    interact, organize, and share information. In this scenario, there has been an unprecedented increase
+    in the scale and complexity of interactions and, at the same time, little to no research about certain
+    fringe social platforms. In this paper, we present a multi-dimensional framework for characterizing
+    nodes and hyperedges in social hypernetworks, with a focus on the understudied alt-right platform
+    Scored.co. Our approach integrates the possibility of studying higher-order interactions, thanks to
+    the hypernetwork representation, and various node features such as user activity, sentiment, and toxicity,
+    with the aim of defining distinct user archetypes and understanding their roles within the network.
+    Utilizing a comprehensive dataset from Scored.co, consisting of more than 4.4 M posts and 36.9 M comments,
+    we analyze the dynamics of these archetypes over time and explore their interactions and influence
+    within the community. We identify eight archetypes, with the largest group comprising over 15,000
+    users, and observe that 44% of interactions involve at least five participants, highlighting the importance
+    of higher-order modeling. Furthermore, we find significant archetype transitions and stable yet locally
+    dense interaction patterns, with users exposed to roughly 1000 unique peers on average. The framework’s
+    versatility allows for detailed analysis of both individual user behaviors and broader social structures.
+    Our findings highlight the importance of higher-order interactions and node features in understanding
+    social dynamics, and offer new insights into the roles and behaviors that emerge in complex online
+    environments.
+
+- id: cauteruccio2025generalizing
+  title: Generalizing Hypergraph Ego-Networks and Their Temporal Stability
+  authors:
+  - Francesco Cauteruccio
+  - Salvatore Citraro
+  - Andrea Failla
+  - Giulio Rossetti
+  year: 2025
+  date: '2026-01-26'
+  type: inproceedings
+  venue: International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2025)
+  pages: 53--67
+  publisher: Springer
+  doi: 10.1007/978-3-032-13513-1_5
+  topics:
+  - higher-order
+  - temporal
+
+- id: failla2024beyond
+  title: 'Beyond Boundaries: Capturing Social Segregation on Hypernetworks'
+  authors:
+  - Andrea Failla
+  - Giulio Rossetti
+  - Francesco Cauteruccio
+  year: 2024
+  date: '2025-01-24'
+  type: inproceedings
+  venue: International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2024)
+  pages: 40--55
+  publisher: Springer
+  doi: 10.1007/978-3-031-78541-2_3
+  topics:
+  - higher-order
+  - mixing
+  award: Best Paper Award, ASONAM 2024
+  links:
+    pdf: /uploads/papers/beyond boundaries.pdf
+
+- id: cau2024bots
+  title: 'Bots of a Feather: Mixing Biases in LLMs’ Opinion Dynamics'
+  authors:
+  - Erica Cau
+  - Andrea Failla
+  - Giulio Rossetti
+  year: 2024
+  date: '2025-04-03'
+  type: inproceedings
+  venue: International Conference on Complex Networks and Their Applications (CNA 2024)
+  pages: 166--176
+  publisher: Springer
+  doi: 10.1007/978-3-031-82439-5_14
+  topics:
+  - mixing
+  - llm
+  award: Best Poster Award, CNA 2024
+
+- id: failla2024describing
+  title: Describing group evolution in temporal data using multi-faceted events
+  authors:
+  - Andrea Failla
+  - Rémy Cazabet
+  - Giulio Rossetti
+  - Salvatore Citraro
+  year: 2024
+  date: '2024-08-01'
+  type: article
+  venue: Machine Learning
+  volume: '113'
+  number: '10'
+  pages: 7591--7615
+  publisher: Springer
+  doi: 10.1007/s10994-024-06600-4
+  topics:
+  - temporal
+  featured: true
+  links:
+    pdf: https://link.springer.com/content/pdf/10.1007/s10994-024-06600-4.pdf
+    code: https://github.com/andreafailla/LifeCycles
+    slides: /uploads/slides/events-como.pdf
+  abstract: >-
+    Groups—such as clusters of points or communities of nodes—are fundamental when addressing various
+    data mining tasks. In temporal data, the predominant approach for characterizing group evolution has
+    been through the identification of “events”. However, the events usually described in the literature,
+    e.g., shrinks/growths, splits/merges, are often arbitrarily defined, creating a gap between such theoretical/predefined
+    types and real-data group observations. Moving beyond existing taxonomies, we think of events as “archetypes”
+    characterized by a unique combination of quantitative dimensions that we call “facets”. Group dynamics
+    are defined by their position within the facet space, where archetypal events occupy extremities.
+    Thus, rather than enforcing strict event types, our approach can allow for hybrid descriptions of
+    dynamics involving group proximity to multiple archetypes. We apply our framework to evolving groups
+    from several face-to-face interaction datasets, showing it enables richer, more reliable characterization
+    of group dynamics with respect to state-of-the-art methods, especially when the groups are subject
+    to complex relationships. Our approach also offers intuitive solutions to common tasks related to
+    dynamic group analysis, such as choosing an appropriate aggregation scale, quantifying partition stability,
+    and evaluating event quality.
+
+- id: mazzoni2024fairnet
+  title: 'FairNet: A Genetic Framework to Reduce Marginalization in Social Networks'
+  authors:
+  - Federico Mazzoni
+  - Andrea Failla
+  - Giulio Rossetti
+  year: 2024
+  date: '2025-01-24'
+  type: inproceedings
+  venue: International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2024)
+  pages: 139--154
+  publisher: Springer
+  doi: 10.1007/978-3-031-78541-2_9
+  topics:
+  - mixing
+  links:
+    pdf: /uploads/papers/LNCS_Fairnet.pdf
+
+- id: morini2024perils
+  title: 'From Perils to Possibilities: Understanding how Human (and AI) Biases affect Online Fora'
+  authors:
+  - Virginia Morini
+  - Valentina Pansanella
+  - Katherine Abramski
+  - Erica Cau
+  - Andrea Failla
+  - Salvatore Citraro
+  - Giulio Rossetti
+  year: 2024
+  date: '2024-03-21'
+  type: preprint
+  venue: arXiv
+  arxiv: '2403.14298'
+  topics:
+  - mixing
+  - llm
+  abstract: >-
+    Social media platforms are online fora where users engage in discussions, share content, and build
+    connections. This review explores the dynamics of social interactions, user-generated contents, and
+    biases within the context of social media analysis (analyzing works that use the tools offered by
+    complex network analysis and natural language processing) through the lens of three key points of
+    view: online debates, online support, and human-AI interactions. On the one hand, we delineate the
+    phenomenon of online debates, where polarization, misinformation, and echo chamber formation often
+    proliferate, driven by algorithmic biases and extreme mechanisms of homophily. On the other hand,
+    we explore the emergence of online support groups through users’ self-disclosure and social support
+    mechanisms. Online debates and support mechanisms present a duality of both perils and possibilities
+    within social media; perils of segregated communities and polarized debates, and possibilities of
+    empathy narratives and self-help groups. This dichotomy also extends to a third perspective: users’
+    reliance on AIgenerated content, such as the ones produced by Large Language Models, which can manifest
+    both human biases hidden in training sets and non-human biases that emerge from their artificial neural
+    architectures. Analyzing interdisciplinary approaches, we aim to deepen the understanding of the complex
+    interplay between social interactions, user-generated content, and biases within the realm of social
+    media ecosystems.
+
+- id: perra2024quantifying
+  title: Quantifying Attraction to Extreme Opinions in Online Debates
+  authors:
+  - Davide Perra
+  - Andrea Failla
+  - Giulio Rossetti
+  year: 2024
+  date: '2025-01-28'
+  type: inproceedings
+  venue: International Conference on Discovery Science (DS 2024)
+  pages: 411--424
+  publisher: Springer
+  doi: 10.1007/978-3-031-78980-9_26
+  topics:
+  - mixing
+  - platforms
+  links:
+    pdf: /uploads/papers/Acrophily 2024.pdf
+
+- id: mesina2024whose
+  title: Whose Voice Matters? Authority and Influence in the Italian Twitter Debates on Covid-19
+  authors:
+  - Veronica Mesina
+  - Andrea Failla
+  - Virginia Morini
+  - Giulio Rossetti
+  year: 2024
+  date: '2025-03-29'
+  type: inproceedings
+  venue: International Conference on Complex Networks and Their Applications (CNA 2024)
+  pages: 352--363
+  publisher: Springer
+  doi: 10.1007/978-3-031-82431-9_29
+  topics:
+  - temporal
+  - platforms
+  aliases:
+  - Whose Voice Matters? Authority
+  links:
+    pdf: /uploads/papers/Covid Influence 2024.pdf
+
+- id: failla2024m
+  title: '“I’m in the Bluesky Tonight”: Insights from a Year Worth of Social Data'
+  authors:
+  - Andrea Failla
+  - Giulio Rossetti
+  year: 2024
+  date: '2024-11-05'
+  type: article
+  venue: PLOS ONE
+  volume: '19'
+  number: '11'
+  pages: e0310330
+  publisher: Public Library of Science
+  doi: 10.1371/journal.pone.0310330
+  topics:
+  - platforms
+  featured: true
+  links:
+    pdf: >-
+      https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0310330&type=printable
+    dataset: https://doi.org/10.5281/zenodo.11082878
+  abstract: >-
+    Pollution of online social spaces caused by rampaging d/misinformation is a growing societal concern.
+    However, recent decisions to reduce access to social media APIs are causing a shortage of publicly
+    available, recent, social media data, thus hindering the advancement of computational social science
+    as a whole. We present a large, high-coverage dataset of social interactions and user-generated content
+    from Bluesky Social to address this pressing issue. The dataset contains the complete post history
+    of over 4M users (81% of all registered accounts), totalling 235M posts. We also make available social
+    data covering follow, comment, repost, and quote interactions. Since Bluesky allows users to create
+    and like feed generators (i.e., content recommendation algorithms), we also release the full output
+    of several popular algorithms available on the platform, along with their timestamped “like” interactions.
+    This dataset allows novel analysis of online behavior and human-machine engagement patterns. Notably,
+    it provides ground-truth data for studying the effects of content exposure and self-selection and
+    performing content virality and diffusion analysis.
+
+- id: failla2023attributed
+  title: >-
+    Attributed Stream Hypergraphs: temporal modeling of node-attributed high-order interactions
+  authors:
+  - Andrea Failla
+  - Salvatore Citraro
+  - Giulio Rossetti
+  year: 2023
+  date: '2023-06-09'
+  type: article
+  venue: Applied Network Science
+  volume: '8'
+  number: '1'
+  pages: '31'
+  publisher: Springer
+  doi: 10.1007/s41109-023-00555-6
+  topics:
+  - higher-order
+  - temporal
+  - mixing
+  links:
+    pdf: https://link.springer.com/content/pdf/10.1007/s41109-023-00555-6.pdf
+    code: https://github.com/GiulioRossetti/ASH
+  abstract: >-
+    Recent advances in network science have resulted in two distinct research directions aimed at augmenting
+    and enhancing representations for complex networks. The first direction, that of high-order modeling,
+    aims to focus on connectivity between sets of nodes rather than pairs, whereas the second one, that
+    of feature-rich augmentation, incorporates into a network all those elements that are driven by information
+    which is external to the structure, like node properties or the flow of time. This paper proposes
+    a novel toolbox, that of Attributed Stream Hypergraphs (ASHs), unifying both high-order and feature-rich
+    elements for representing, mining, and analyzing complex networks. Applied to social network analysis,
+    ASHs can characterize complex social phenomena along topological, dynamic and attributive elements.
+    Experiments on real-world face-to-face and online social media interactions highlight that ASHs can
+    easily allow for the analyses, among others, of high-order groups’ homophily, nodes’ homophily with
+    respect to the hyperedges in which nodes participate, and time-respecting paths between hyperedges.
+
+- id: mazzoni2023quantifying
+  title: 'Quantifying and Reducing Marginalization in Networks: a Genetic Approach'
+  authors:
+  - Federico Mazzoni
+  - Andrea Failla
+  - Giulio Rossetti
+  year: 2023
+  type: poster
+  venue: International Conference on Computational Social Science (IC2S2 2023), Copenhagen, Denmark
+  topics:
+  - mixing
+
+- id: failla2022attributeaware
+  title: Attribute-aware Community Events in Feature-rich Dynamic Networks
+  authors:
+  - Andrea Failla
+  - Federico Mazzoni
+  - Salvatore Citraro
+  year: 2022
+  type: poster
+  venue: >-
+    International Conference on Complex Networks and Their Applications (CNA 2022), Palermo, Italy
+  topics:
+  - temporal
+
+- id: failla2022attributed
+  title: 'Attributed Stream-Hypernetwork Analysis: a SocioPatterns Case Study'
+  authors:
+  - Andrea Failla
+  - Salvatore Citraro
+  - Giulio Rossetti
+  year: 2022
+  type: inproceedings
+  venue: Italian Symposium on Advanced Database Systems (SEBD 2022)
+  pages: 383--391
+  topics:
+  - higher-order
+  - temporal
+  abstract: >-
+    Network science comes as a solid framework to describe a multitude of human behaviours. Face-to-face
+    human interactions, for instance, are often represented by dynamic networks involving time-varying
+    links. Such temporal models are shown to be effective as proxies for real communications between individuals.
+    However, networks are intrinsically bounded to pairwise/dyadic connections, whereas complex human
+    dynamics can naturally involve higher-order organization, namely relationships between groups of entities.
+    In the last few years, hypergraph and simplicial complex models have been addressed as promising tools
+    to better understand the dynamics of social groups. In the analysis of face-to-face interactions,
+    the higher-order organization of temporal networks has been addressed by investigating collections
+    of datasets initially designed for graph-based analysis. Yet even these higher-order representations
+    continue to ignore the rich attributes or metadata often carried by the nodes. Such attributes can
+    offer new interesting perspectives about the dynamics of the higher-order structure emerging from
+    a stream of social interactions. In this work, we aim to address this gap by introducing attributed
+    stream-hypernetwork models, i.e., higher-order temporal networks with attributive information on nodes.
+    Considering the Primary and High School temporal networks from the well-known SocioPatterns project,
+    we infer the higher-order temporal structure of interactions between children and high school students,
+    and we characterize their non-trivial relationships with respect to their gender attribute.
+
+- id: failla2022attributedb
+  title: >-
+    Attributed Stream-Hypernetwork Analysis: Homophilic Behaviors in Pairwise and Group Political Discussions
+    on Reddit
+  authors:
+  - Andrea Failla
+  - Salvatore Citraro
+  - Giulio Rossetti
+  year: 2022
+  date: '2023-01-04'
+  type: inproceedings
+  venue: International Conference on Complex Networks and Their Applications (CNA 2022)
+  pages: 150--161
+  publisher: Springer
+  doi: 10.1007/978-3-031-21127-0_13
+  topics:
+  - higher-order
+  - mixing
+  - platforms
+  links:
+    slides: /uploads/slides/ASH_CN.pdf
+  abstract: >-
+    Complex networks are solid models to describe human behavior. However, most analyses employing them
+    are bounded to observations made on dyadic connectivity, whereas complex human dynamics involve higher-order
+    relations as well. In the last few years, hypergraph models are rising as promising tools to better
+    understand the behavior of social groups. Yet even such higher-order representations ignore the importance
+    of the rich attributes carried by the nodes. In this work we introduce ASH, an Attributed Stream-Hypernetwork
+    framework to model higher-order temporal networks with attributes on nodes. We leverage ASH to study
+    pairwise and group political discussions on the well-known Reddit platform. Our analysis unveils different
+    patterns while looking at either a pairwise or a higher-order structure for the same phenomena. In
+    particular, we find out that Reddit users tend to surround themselves by like e-minded peers with
+    respect to their political leaning when online discussions are proxied by pairwise interactions; conversely,
+    such a tendency significantly decreases when considering nodes embedded in higher-order contexts -
+    that often describe heterophilic discussions.
+
+- id: failla2022towards
+  title: >-
+    Towards Attributed Stream-Hypernetwork Analysis: Structure, Features and Dynamics of Complex Social
+    Systems
+  authors:
+  - Andrea Failla
+  year: 2022
+  date: '2022-09-29'
+  type: mastersthesis
+  venue: MSc in Digital Humanities
+  institution: University of Pisa
+  topics:
+  - higher-order
+  - temporal
+  - mixing
+  links:
+    repository: https://etd.adm.unipi.it/theses/available/etd-07292022-114220/

@@ -1,15 +1,11 @@
 ---
 title: Network Analysis and Visualization
 summary: Remote training within the YADESA project
-date: 2026-03-27
-type: docs
-math: false
+date: '2026-03-27'
 tags:
-  - Network Science
-image:
-  caption: 
+- Network Science
+image: featured.png
 ---
-
 This is the page for the Network Analysis and Visualization class within the YADESA project. The class is held remotely on Zoom.
 
 ### Class Description
@@ -18,6 +14,8 @@ This class will last 4 hours and will introduce the audience to the following to
 - Network Analysis in Python with NetworkX
 - Network Visualization with [Gephi](https://gephi.org/)
 
+
+Recording: [watch on YouTube](https://www.youtube.com/watch?v=ArVADQL0f78)
 
 Slides: [here](https://docs.google.com/presentation/d/1gPkiAmuA6-4UKGjPZnWeOUJoVl9bzle-_N9oibcOKRw/edit?usp=sharing) (adapted from Prof. [Giulio Rossetti](https://giuliorossetti.github.io/)'s material)
 

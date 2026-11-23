@@ -1,0 +1,147 @@
+# Talks, workshops, tutorials, and events. Rendered as a list on /events/ (newest first, by year)
+# and in the News feed on the home page.
+# Fields: date (YYYY-MM-DD; used for sorting), when (optional label shown instead of the day,
+#   e.g. "Aug" when the exact day is unknown), role, title, venue, url (title link), abstract,
+#   links: [{label, url}]
+
+- date: 2026-11-19
+  role: Invited talk
+  title: Analisi dei social media attraverso le scienze sociali computazionali
+  venue: Seminario di Cultura Digitale (host Prof. Barbara Guidi), University of Pisa, Italy
+
+- date: 2026-04-29
+  role: Tutorial
+  title: "Hands-on Training on the SoBigData Platform: Identifying Epistemic Enclaves and Understanding Polarisation"
+  venue: DigitAfrica, Tunis, Tunisia (with Giulio Rossetti)
+  url: https://www.digitafrica.eu/wp-content/uploads/2026/03/SobigData_-Course-Overview-Tunis-29_April_2026.pdf
+  links:
+    - label: Materials
+      url: https://github.com/GiulioRossetti/DigitAfrica_workshop_2026
+
+- date: 2026-02-18
+  role: Invited talk
+  title: Addressing Data Constraints in Social Media Research
+  venue: ISTI-TALK seminar series, ISTI-CNR, Pisa, Italy
+  url: https://www.isti.cnr.it/en/announcements/seminars/1/ISTI-TALK:_Addressing_Data_Constraints_in_Social_Media_Research
+
+- date: 2026-08-24
+  when: Aug
+  role: Program Co-Chair
+  title: "SimSoc (2nd ed.) – Simulated Societies: From Opinion Dynamic Models to Digital Twins"
+  venue: Workshop at ASONAM 2026, Rabat, Morocco
+  url: https://simulatedsocieties.github.io/
+
+- date: 2026-08-24
+  when: Aug
+  role: Session Chair
+  title: Session "Community Detection and Clustering"
+  venue: ASONAM 2026, Rabat, Morocco
+  url: https://asonam.cpsc.ucalgary.ca/2026/
+
+- date: 2026-06-01
+  role: Program Co-Chair
+  title: TENET (3rd ed.) – Satellite on Temporal Networks
+  venue: Satellite at NetSci 2026, Boston, USA
+  url: https://tenet-satellite.github.io/website.github.io/
+
+- date: 2025-09-01
+  role: Program Co-Chair
+  title: "SimSoc – Simulated Societies: From Agent-based Models to Digital Twins"
+  venue: Satellite at CCS 2025, Siena, Italy
+  url: https://simulatedsocieties.github.io/previous-editions/
+
+- date: 2025-09-01
+  role: Program Co-Chair
+  title: TENET (2nd ed.) – Satellite on Temporal Networks
+  venue: Satellite at CCS 2025, Siena, Italy
+  url: https://sites.google.com/view/tenet-ccs25/home
+
+- date: 2025-08-25
+  role: Program Co-Chair
+  title: HyperSci (2nd ed.) – 2nd International Workshop on Theory and Applications of Hypernetwork Science
+  venue: ASONAM 2025, Niagara Falls, Canada
+  url: https://hypersci2025.github.io/
+
+- date: 2025-08-25
+  role: Program Co-Chair
+  title: SMS (2nd ed.) – The Social Media Sway, Unraveling the Impact of Social Media on Human Behavior
+  venue: ASONAM 2025, Niagara Falls, Canada
+  url: https://sms-workshop.github.io/
+
+- date: 2025-08-25
+  role: Session Chair
+  title: Track "LLM in Network Analysis"
+  venue: ASONAM 2025, Niagara Falls, Canada
+  url: http://asonam.cpsc.ucalgary.ca/2025/
+
+- date: 2025-06-23
+  role: Tutorial
+  title: Modeling and Mining High-order Interactions in Social Media Data
+  venue: ICWSM 2025, Copenhagen, Denmark
+  url: https://dsh2025.github.io/
+  links:
+    - label: Slides
+      url: https://dsh2025.github.io/assets/material/slide.pdf
+    - label: Data
+      url: /uploads/data/icwsm2025.tar.gz
+
+- date: 2025-06-10
+  role: Program Co-Chair
+  title: "LSAI (2nd ed.) – International Workshop on Law, Society and Artificial Intelligence: Interdisciplinary perspectives on AI safety"
+  venue: HHAI 2025, Pisa, Italy
+  url: https://lsai2025.github.io/
+
+- date: 2025-06-09
+  role: Tutorial
+  title: LLM-powered Simulations of Social Media Environments
+  venue: HHAI 2025, Pisa, Italy
+
+- date: 2025-06-02
+  role: Program Co-Chair
+  title: TENET (1st ed.) – Satellite on Temporal Networks
+  venue: NetSci 2025, Maastricht, The Netherlands
+  url: https://sites.google.com/view/tenet-netsci/home
+
+- date: 2024-12-02
+  role: Program Co-Chair
+  title: LSAI (1st ed.) – 1st Doctoral Workshop on Law, Society and Artificial Intelligence
+  venue: University of Pisa, Pisa, Italy
+  url: https://lsai-ws.github.io/
+  links:
+    - label: Poster
+      url: https://lsai-ws.github.io/locandina.pdf
+
+- date: 2024-09-04
+  role: Program Co-Chair
+  title: HyperSci (1st ed.) – 1st International Workshop on Theory and Applications of Hypernetwork Science
+  venue: ASONAM 2024, Rende, Italy
+  url: https://hypersci-workshop.github.io/
+  links:
+    - label: Intro slides
+      url: /uploads/slides/hypersci-intro.pdf
+    - label: Tutorial slides
+      url: /uploads/slides/hypersci-lib.pdf
+    - label: Poster
+      url: /uploads/posters/hypersci.jpeg
+
+- date: 2024-07-10
+  role: Invited talk
+  title: "Group Dynamics in Online Social Networks: Communities and High-order Interactions in Time"
+  venue: Colorful Seminars Series (SoBigData), University of Pisa, Italy
+  url: http://www.sobigdata.eu/events/colorful-seminar-series-news-and-emotions-5deg-seminar
+  abstract: >-
+    Pollution of online social spaces caused by rampaging d/misinformation is a growing societal concern.
+    To tackle these issues, it is crucial to describe and understand group behaviors on online social
+    platforms. In this presentation, we will go through novel methods and techniques to study groups and
+    their temporal evolution, with applications to debates on social media. We will focus on hypergraphs —
+    models that can encode larger-than-binary interactions — and graph communities — clusters extracted
+    from network data — and highlight the nuances these structures bring to research on digital social
+    dynamics.
+  links:
+    - label: Slides
+      url: /uploads/slides/colorful-seminars.pdf
+
+- date: 2023-05-26
+  role: Invited talk
+  title: Temporal Modeling of Node-attributed High-order Interactions
+  venue: Séminaires LIRIS (DM2L), CNRS/Université Claude Bernard Lyon 1, Lyon, France

@@ -1,0 +1,85 @@
+# Software, datasets, and side projects. Rendered on /projects/ (newest first).
+# Fields: title, date (YYYY-MM-DD), url, summary, tags, featured
+# Only `featured: true` projects appear on the site; the others are kept here for later.
+
+- title: "YSocial: AI-powered Social Media Digital Twin"
+  featured: true
+  date: 2025-01-01
+  url: https://y-not.social/
+  summary: >-
+    Open-source, LLM-driven social media simulator for studying social dynamics, recommender
+    effects, and misinformation in a controlled environment.
+  tags: [simulation, LLM]
+
+- title: Bluesky Social Dataset
+  featured: true
+  date: 2024-04-01
+  url: https://doi.org/10.5281/zenodo.11082878
+  summary: >-
+    User-generated content and interactions (follow, reply, repost, quote) from 4M users
+    (81% of all registered accounts) over more than a year.
+  tags: [dataset]
+
+- title: LifeCycles
+  featured: true
+  date: 2024-03-01
+  url: https://lifecycles.readthedocs.io/en/latest/
+  summary: Python package to model and analyze the temporal dynamics of (groups of) data points and nodes.
+  tags: [python, temporal networks]
+
+- title: pix2beats
+  date: 2024-01-01
+  url: /pix2beats/
+  summary: Web app that makes music from images by converting pixels into waveforms.
+  tags: [web app, fun]
+
+- title: Diff2Gif
+  date: 2023-10-26
+  url: https://diff2gif.streamlit.app/
+  summary: Web app to make GIFs of spreading processes on graphs.
+  tags: [web app, diffusion]
+
+- title: ASH
+  featured: true
+  date: 2023-01-01
+  url: https://ash-model.readthedocs.io/en/latest/
+  summary: Python library to model temporal hypergraphs with node attributes.
+  tags: [python, hypergraphs]
+
+- title: Reddit Climate Change Debate Dataset
+  date: 2024-09-01
+  url: https://zenodo.org/records/13603528
+  summary: >-
+    Interactions in Reddit discussions on climate change, with users' position in the debate
+    estimated by a neural model.
+  tags: [dataset]
+
+- title: Scored.co Hypernetwork Dataset
+  date: 2024-07-30
+  url: https://zenodo.org/records/13142208
+  summary: Higher-order interactions from discussions on the far-right social network Scored.co.
+  tags: [dataset, hypergraphs]
+
+- title: Italian Covid-19 Retweet Network
+  date: 2024-10-01
+  url: https://zenodo.org/records/13909011
+  summary: Italian retweet network on Covid-19 for the analysis of online debates.
+  tags: [dataset]
+
+- title: RWHS
+  date: 2024-09-01
+  url: https://github.com/GiulioRossetti/ASH
+  summary: Algorithm to measure local segregation on attributed hypergraphs (part of ASH).
+  tags: [python, hypergraphs]
+
+- title: FairNet
+  date: 2024-09-02
+  url: https://github.com/andreafailla/fairnet
+  summary: Genetic algorithm to reduce local and global marginalization in social networks.
+  tags: [python, fairness]
+
+- title: CDlib
+  date: 2019-01-01
+  url: https://github.com/GiulioRossetti/cdlib
+  summary: Library of community discovery algorithms, with tools to evaluate and compare results.
+  tags: [python, communities]
