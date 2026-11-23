@@ -670,3 +670,131 @@
   - mixing
   links:
     repository: https://etd.adm.unipi.it/theses/available/etd-07292022-114220/
+
+# --- imported from Google Scholar ---
+- id: mazzoni2026incremental
+  topics: [llm]
+  title: Incremental Retrieval-Augmented Generation for Human-in-the-Loop Decision Support
+  authors:
+  - Federico Mazzoni
+  - Andrea Failla
+  year: 2026
+  type: preprint
+  venue: arXiv (Cornell University)
+  doi: 10.48550/arxiv.2610.12666
+  arxiv: '2610.12666'
+  links:
+    pdf: https://arxiv.org/pdf/2610.12666
+  abstract: We introduce iRAG, a human-in-the-loop decision-support system combining Retrieval-Augmented
+    Generation (RAG) with Hybrid Decision-Making. Unlike conventional RAG systems, relying on static Knowledge
+    Bases (KBs), our proposal addresses settings where the KB is initially empty and is progressively
+    populated through human decisions. The system stores previous decisions as retrievable precedents
+    and moves from silent observation to evidence-grounded contestation and, finally, to autonomous handling
+    with abstention. Against an independent baseline, iRAG matches final-decision error under 10% drift
+    without retrieval decay and reduces it under 40% drift across all configurations. Retrieval decay
+    improves performance on changed knowledge while increasing error on stable knowledge, evidencing a
+    stability--plasticity trade-off rather than a general advantage. Human oversight is an architectural
+    provision of the workflow; its usability with real human users remains to be evaluated.
+- id: mazzoni2026benchmarking
+  topics: [llm, platforms]
+  title: Benchmarking System One Models in Online Moderation
+  authors:
+  - Federico Mazzoni
+  - Andrea Failla
+  year: 2026
+  type: preprint
+  venue: arXiv (Cornell University)
+  doi: 10.48550/arxiv.2610.07953
+  arxiv: '2610.07953'
+  links:
+    pdf: https://arxiv.org/pdf/2610.07953
+  abstract: 'Online moderation systems must apply changing platform policies, community rules, and prior
+    decisions while producing decisions that can be audited and routed to human review. We evaluate whether
+    System One Models, which accept natural-language context but return typed choices, probabilities,
+    or scores, can support this setting. Across five moderation benchmarks, Jev is competitive with specialized
+    reference systems, matching or exceeding them in several policy-grounded and harmful-content settings.
+    We then use controlled information conditions to separate written rules, retrieved precedents, and
+    restrictions on the candidate answer space. Jev generally benefits from retrieved precedents, improving
+    exact policy selection and harmful-content discrimination when the answer space is held fixed. Laya
+    is less consistent: retrieval often shifts its positive prediction rate or no-violation rate without
+    improving discrimination. Jev confidence can support selective review in several settings, although
+    it is not consistently calibrated; Laya confidence is less useful for ranking errors. These results
+    show a promising future for SOM-powered content moderation.'
+- id: failla2026out
+  topics: [platforms, temporal]
+  title: Out-of-Network Attention Dynamics on Bluesky
+  authors:
+  - Andrea Failla
+  - Veronica Mesina
+  - Giulio Rossetti
+  year: 2026
+  type: preprint
+  venue: arXiv (Cornell University)
+  doi: 10.48550/arxiv.2610.01971
+  arxiv: '2610.01971'
+  links:
+    pdf: https://arxiv.org/pdf/2610.01971
+  abstract: Personalized social media commonly relies on explicit follow graphs to shape what content
+    users encounter; yet how much attention crosses ties they have not formed remains largely undocumented
+    at scale. We study this question on Bluesky, a large decentralized microblogging platform whose default
+    feed relies on a simple, reverse-chronological content recommender. We analyze 173 million user-author
+    interactions (likes, reposts, replies, and quotes) collected from a near-complete platform dump between
+    February and September 2023. We decompose each interaction by attention-path length (already followed,
+    relayed by a followed account, reachable within two follow-hops, or beyond) and find that 74.5% of
+    interactions reach the user through an account they already follow. Measured by distance in the follow
+    graph rather than by route, 80.6% of interaction lands within two follow hops, far beyond the 22.4%
+    an expected-degree null predicts. We then characterize how exploration varies across users and over
+    tenure. A broad-reaching minority generates three quarters of all exploratory activity, while aggregate
+    declines in exploration with tenure mask three distinct individual trajectories. Finally, attention
+    reaching beyond two hops converts into new follow ties at less than one third the rate of two-hop-local
+    exploratory attention. Together, these results depict a platform where out-of-network exploration
+    is substantial in volume but strongly constrained by network proximity and unlikely to translate into
+    new social ties.
+- id: morais2026decade
+  topics: [platforms, llm]
+  title: A Decade of Climate Polarization on Brazilian YouTube using Language Models
+  authors:
+  - Daniel Morais
+  - Diego H. M. Magalhaes
+  - Gabriel H. Silva
+  - Andrea Failla
+  - Valeria de C. Santos
+  - Helen C. S. C. Lima
+  - Carlos H. G. Ferreira
+  year: 2026
+  type: preprint
+  venue: arXiv (Cornell University)
+  doi: 10.48550/arxiv.2609.27811
+  arxiv: '2609.27811'
+  links:
+    pdf: https://arxiv.org/pdf/2609.27811
+  abstract: 'Online platforms have become arenas for the public contestation of climate change, shaping
+    how scientific knowledge, denial, and uncertainty are expressed and disputed. Yet longitudinal evidence
+    remains limited for YouTube, especially for Portuguese-language discourse. Addressing this gap, we
+    characterize how climate stances are expressed and contested over time in a large corpus of Portuguese-language
+    YouTube comments retrieved through Brazil-oriented climate-related searches. To support this analysis
+    in a noisy, imbalanced, and low-resource setting, we collect more than 240,000 comments posted between
+    2014 and 2024 and formulate stance detection as a three-way classification task (Believer, Denier,
+    and Inconclusive). We operationalize stance attribution through a scalable self-training pipeline
+    based on Llama 3.1, using Low-Rank Adaptation (LoRA) and hybrid instance selection to expand the training
+    set with high-confidence pseudo-labeled examples while preserving class diversity. This approach improves
+    coverage and class balance for minority and rhetorically complex classes, enabling large-scale stance
+    attribution without extensive manual annotation. Our results show that polarisation is marked by interactional
+    asymmetries: denialist comments are less prevalent, but they are associated with a comparatively higher
+    share of cross-stance contestation, while pro-consensus discourse is more strongly reinforced within
+    stance-homogeneous threads.'
+- id: calderonio2025preface
+  hidden: true  # workshop preface; Scholar-only metadata is truncated
+  title: 'Preface of the 2nd Workshop on Law, Society and Artificial Intelligence: Interdisciplinary perspectives
+    on AI safety'
+  authors:
+  - V Calderonio
+  - V Caponecchia
+  - G Colavito
+  - A Failla
+  - F Mazzoni
+  - '...'
+  year: 2025
+  type: misc
+  venue: Proceedings of the Workshops at the Fourth International Conference on …
+  needs_review: metadata from Google Scholar only; check authors, venue, and year
