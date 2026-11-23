@@ -68,6 +68,7 @@ OLD_PUB_SLUGS = {  # old /publication/<slug>/ -> publication id
 }
 NEWS_SHOWN = 3
 HISTORY_SHOWN = 3
+TEACHING_SHOWN = 4
 # Publication type -> (filter value, filter label) for the "Type" filter on the home page.
 PUB_KINDS = {"article": ("journal", "Journal"), "inproceedings": ("conference", "Conference"),
              "preprint": ("preprint", "Preprint"), "poster": ("poster", "Poster"),
@@ -344,6 +345,7 @@ def build(dev: bool = False) -> None:
                 pub_count=len(pubs), topics=topics, graph=hypergraph.layout(topics, pubs),
                 topic_facets=topic_facets, kind_facets=kind_facets, role_facets=role_facets,
                 news=news, news_shown=NEWS_SHOWN, history=build_history(profile), history_shown=HISTORY_SHOWN,
+                teaching_shown=TEACHING_SHOWN,
                 projects=projects, courses=teaching, today=today,
                 event_count=len(events), slug=slug,
                 event_years=group_by_year([{**e, "year": e["date"].year} for e in events]))

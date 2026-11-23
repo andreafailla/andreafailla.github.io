@@ -42,14 +42,23 @@
 
 <section class="tile span-5 reveal" id="teaching" aria-labelledby="teaching-h">
   <header class="card-head"><h2 id="teaching-h" class="card-title"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i> Teaching</h2></header>
+  {% macro teaching_list(items) %}
   <ul class="cv-list">
-    {% for t in profile.teaching %}
+    {% for t in items %}
     <li><span class="mono meta">{{ t.years }}</span><br>
       {% if t.url %}<a href="{{ t.url }}"><strong>{{ t.title }}</strong> <span aria-hidden="true">↗</span></a>{% else %}<strong>{{ t.title }}</strong>{% endif %}
       <br><span class="muted small">{{ t.where }}</span>
       {% if t.video %}<br><a class="chip video-chip" href="{{ t.video }}"><i class="fa-brands fa-youtube" aria-hidden="true"></i> Video</a>{% endif %}</li>
     {% endfor %}
   </ul>
+  {% endmacro %}
+  {{ teaching_list(profile.teaching[:teaching_shown]) }}
+  {% if profile.teaching | length > teaching_shown %}
+  <details class="more-block">
+    <summary class="chip">Show all <span class="count">{{ profile.teaching | length - teaching_shown }} more</span></summary>
+    {{ teaching_list(profile.teaching[teaching_shown:]) }}
+  </details>
+  {% endif %}
   {% set listed = profile.teaching | selectattr("url") | map(attribute="url") | list %}
   {% set extra = courses | rejectattr("url", "in", listed) | list %}
   {% if extra %}
@@ -59,7 +68,7 @@
   </ul>
   {% endif %}
   <details class="more-block">
-    <summary class="chip">Thesis co-supervision ({{ profile.supervision | length }})</summary>
+    <summary class="chip">Thesis co-supervision <span class="count">{{ profile.supervision | length }}</span></summary>
     <ul class="cv-list">
       {% for s in profile.supervision %}
       <li><span class="mono meta">{{ s.year }}</span> {{ s.student }}, <em>{{ s.title }}</em><br><span class="muted small">{{ s.degree }}</span></li>
