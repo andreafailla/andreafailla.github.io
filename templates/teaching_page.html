@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% set title = page.title %}
+{% set description = page.summary %}
+{% block main %}
+<div class="wrap page narrow">
+  <nav class="crumbs mono small" aria-label="Breadcrumb"><a href="/#teaching">Teaching</a> / {{ page.slug }}</nav>
+  <header class="page-head">
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.summary }}</p>
+    {% if page.tags %}<p>{% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}</p>{% endif %}
+  </header>
+  <article class="prose">{{ page.body }}</article>
+</div>
+{% endblock %}

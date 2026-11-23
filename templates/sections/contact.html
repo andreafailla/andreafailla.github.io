@@ -1,0 +1,12 @@
+<section class="tile span-12 tile-contact reveal" id="contact" aria-labelledby="contact-h">
+  <div>
+    <h2 id="contact-h" class="card-title"><i class="fa-regular fa-envelope" aria-hidden="true"></i> Contact</h2>
+    <p class="lede">Let's talk networks, platforms, or bands with quirky names.</p>
+    <p class="muted">{% for o in profile.organizations %}{{ o.name }}{% endfor %}, Pisa, Italy</p>
+  </div>
+  <ul class="contact-links">
+    {% for l in profile.links %}
+    <li><a href="{{ l.url }}"><i class="{{ l.icon }}" aria-hidden="true"></i> {{ l.label }}</a></li>
+    {% endfor %}
+  </ul>
+</section>

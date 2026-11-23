@@ -1,0 +1,44 @@
+{% macro history_list(items) %}
+<ol class="history">
+  {% for h in items %}
+  <li>
+    <p class="mono meta">{{ h.start | date }}{% if h.end and h.end != h.start %} – {{ h.end | date }}{% elif not h.end %} – present{% endif %}</p>
+    <p class="history-title">{{ h.title }}</p>
+    <p class="small muted">{{ h.where }}</p>
+  </li>
+  {% endfor %}
+</ol>
+{% endmacro %}
+
+<section class="tile span-7 reveal" id="about" aria-labelledby="about-h">
+  <header class="card-head"><h2 id="about-h" class="card-title"><i class="fa-regular fa-user" aria-hidden="true"></i> About</h2></header>
+  <div class="prose">{{ about }}</div>
+  <p class="label">Interests</p>
+  <ul class="tags">
+    {% for i in profile.interests %}<li>{{ i }}</li>{% endfor %}
+  </ul>
+</section>
+
+<div class="span-5 stack">
+  <section class="tile reveal" id="news" aria-labelledby="news-h">
+    <header class="card-head"><h2 id="news-h" class="card-title"><i class="fa-regular fa-bell" aria-hidden="true"></i> News</h2></header>
+    {{ m.news_list(news[:news_shown]) }}
+    {% if news | length > news_shown %}
+    <details class="more-block">
+      <summary class="chip">Read more <span class="count">{{ news | length - news_shown }}</span></summary>
+      {{ m.news_list(news[news_shown:]) }}
+    </details>
+    {% endif %}
+  </section>
+
+  <section class="tile reveal" id="history" aria-labelledby="history-h">
+    <header class="card-head"><h2 id="history-h" class="card-title"><i class="fa-solid fa-timeline" aria-hidden="true"></i> History</h2></header>
+    {{ history_list(history[:history_shown]) }}
+    {% if history | length > history_shown %}
+    <details class="more-block">
+      <summary class="chip">Full history <span class="count">{{ history | length - history_shown }}</span></summary>
+      {{ history_list(history[history_shown:]) }}
+    </details>
+    {% endif %}
+  </section>
+</div>

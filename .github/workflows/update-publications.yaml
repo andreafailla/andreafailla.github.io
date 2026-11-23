@@ -1,0 +1,46 @@
+name: Import new publications from Google Scholar
+
+# Weekly: list the Scholar profile via SerpAPI (1 request), enrich new papers via OpenAlex,
+# append them to content/publications.yaml, and open a pull request for review.
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v6
+      - name: Import from Scholar
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: uv run --locked python scripts/import_scholar.py
+      - name: Check tests and build still pass
+        run: |
+          uv run --locked --group dev pytest -q
+          uv run --locked python build.py
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: auto/scholar-import
+          commit-message: "feat(publications): import new papers from Google Scholar"
+          title: "New publications from Google Scholar"
+          body: |
+            New papers found on Google Scholar and appended to `content/publications.yaml`.
+
+            Before merging, check each new entry:
+            - authors, venue, and year are right (entries with `needs_review` came from Scholar only);
+            - it is not a duplicate of an existing paper (if it is, add the new title to the old entry's `aliases` and delete the new entry);
+            - optionally set `featured`, `award`, and `links`, then delete the `needs_review` line.
+
+            Edit this PR's branch only if you merge before next Monday: the weekly run regenerates it from `main`.
+          add-paths: content/publications.yaml
+          delete-branch: true

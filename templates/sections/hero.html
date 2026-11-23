@@ -1,0 +1,20 @@
+<section class="tile span-8 rows-2 tile-hero reveal" id="top">
+  <p class="kicker"><span class="pulse" aria-hidden="true"></span><span>{{ profile.role }} ·
+    {% for o in profile.organizations %}<a href="{{ o.url }}">{{ o.name }}</a>{% endfor %}, Pisa</span></p>
+  <h1 class="display">Andrea<br><span class="accent-word">Failla</span></h1>
+  <div class="hero-actions">
+    <a class="button" href="{{ profile.cv | href }}"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i> CV (PDF)</a>
+    <a class="button ghost" href="#publications">Publications</a>
+    <a class="button ghost" href="#contact">Contact</a>
+  </div>
+  <ul class="icon-links">
+    {% for l in profile.links %}
+    <li><a href="{{ l.url }}" aria-label="{{ l.label }}" title="{{ l.label }}"><i class="{{ l.icon }}" aria-hidden="true"></i></a></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<figure class="tile span-4 rows-2 tile-portrait reveal">
+  <img src="{{ profile.avatar | image('avatar') }}" alt="Portrait of {{ profile.name }}" width="480" height="469">
+  <figcaption class="mono">KDD Lab · ISTI-CNR</figcaption>
+</figure>
