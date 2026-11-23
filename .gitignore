@@ -13,4 +13,5 @@ __pycache__/
 
 # Local preview config
 /.claude/launch.json
+/.claude/logs/
 .coverage
